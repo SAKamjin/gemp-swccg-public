@@ -4032,6 +4032,8 @@ const fixedImages = {
 "305_43":"https://i.imgur.com/SIxU6mN.png", //Mihoshi Keibatsu, Councillor of Urr
 "305_44":"https://i.imgur.com/Udsi5Kt.png", //Hidden Corridors
 "305_45":"https://i.imgur.com/GjhYmHy.png", //Kalen Joss
+"305_46":"https://i.imgur.com/zrHZZOx.png", //Turel Sorenn's Lightsaber
+"305_47":"https://i.imgur.com/t9PRIyc.png", //Teikhos Ta'var's Lightsaber
 
 //playtesting
 "501_1":"https://res.starwarsccg.org/cards/Virtual20-Light/hires/beskardeflection.png",

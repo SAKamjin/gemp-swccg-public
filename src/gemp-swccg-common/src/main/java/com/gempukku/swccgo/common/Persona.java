@@ -303,6 +303,8 @@ public enum Persona implements Filterable {
     DELAKS_LIGHTSABER("Delak Krennel's Lightsaber"),
     TALON_JADES_LIGHTSABER("Talon Jade's Lightsabers"),
     KAMJINS_DOUBLE_BLADED_LIGHTSABER("Kamjin's Double-Bladed Lightsaber"),
+    TUREL_SORENNS_LIGHTSABER("Turel Sorenn's Lightsaber"),
+    TEIKHOS_TAVARS_LIGHTSABER("Teikhos Ta'var's Lightsaber"),
 
 
     ;
