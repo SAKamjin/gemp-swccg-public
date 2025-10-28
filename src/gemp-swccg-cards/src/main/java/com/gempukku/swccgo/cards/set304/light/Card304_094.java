@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class Card304_094 extends AbstractSite {
     public Card304_094() {
-        super(Side.LIGHT, Title.Ulress_Space_Port, Title.Ulress, Uniqueness.UNIQUE, ExpansionSet.GREAT_HUTT_EXPANSION, Rarity.V);
+        super(Side.LIGHT, Title.Ulress_Docking_Bay, Title.Ulress, Uniqueness.UNIQUE, ExpansionSet.GREAT_HUTT_EXPANSION, Rarity.V);
         setLocationDarkSideGameText("Your docking bay transit from here requires 2 Force.");
         setLocationLightSideGameText("Your docking bay transit from here requires 1 Force.");
         addIcon(Icon.DARK_FORCE, 1);

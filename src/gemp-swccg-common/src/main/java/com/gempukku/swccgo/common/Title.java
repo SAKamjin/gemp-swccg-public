@@ -1380,7 +1380,7 @@ public interface Title {
     String Crime_Wave = "Crime Wave";
     String Kidnapping_From_The_Empire = "Kidnapping From The Empire";
     String Claudius_Prize = "Claudius's Prize";
-    String Ulress_Space_Port = "Ulress: Space Port (Docking Bay)";
+    String Ulress_Docking_Bay = "Ulress: Docking Bay";
     String Koudooine_Docking_Bay = "Koudooine: Docking Bay";
     String Criminal_Empire = "Criminal Empire";
     String Organized_Crime = "Organized Crime";

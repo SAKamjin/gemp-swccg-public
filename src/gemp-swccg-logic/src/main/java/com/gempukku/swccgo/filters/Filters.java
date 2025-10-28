@@ -19461,7 +19461,7 @@ public class Filters {
     public static final Filter Claudius_Prize = Filters.title(Title.Claudius_Prize);
     public static final Filter Koudooine_location = Filters.partOfSystem(Title.Koudooine);
     public static final Filter Koudooine_Docking_Bay = Filters.title(Title.Koudooine_Docking_Bay);
-    public static final Filter Ulress_Space_Port = Filters.title(Title.Ulress_Space_Port);
+    public static final Filter Ulress_Docking_Bay = Filters.title(Title.Ulress_Docking_Bay);
 	public static final Filter CSP_character = Filters.and(Icon.CSP, CardCategory.CHARACTER);
     public static final Filter Club_Antonia_Bar = Filters.title(Title.Club_Antonia_Bar);
     public static final Filter Ulress_Club_Antonia = Filters.title(Title.Ulress_Club_Antonia);
