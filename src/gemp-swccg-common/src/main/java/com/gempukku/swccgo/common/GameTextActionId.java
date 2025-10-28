@@ -1050,6 +1050,7 @@ public enum GameTextActionId {
     BENN_NEVIS__UPLOAD_SENSE_CONTROL_OR_ALTER(true, true),
     COUNCILLOR_TUREL_SORENN__DOWNLOAD_LIGHTSABER_FROM_LOST_PILE(true, true),
     MIHOSHI_KEIBATUS__DOWNLOAD_TUREL_OR_TEIKHOS(true, true),
+    ECHO_OF_VAUZEM__DOWNLOAD_SEPHI(true, true),
 
     // Per captive
     DUNGEON__RETRIEVE_FORCE(false, false, true, false),

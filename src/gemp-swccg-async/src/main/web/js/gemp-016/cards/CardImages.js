@@ -4034,6 +4034,7 @@ const fixedImages = {
 "305_45":"https://i.imgur.com/GjhYmHy.png", //Kalen Joss
 "305_46":"https://i.imgur.com/zrHZZOx.png", //Turel Sorenn's Lightsaber
 "305_47":"https://i.imgur.com/t9PRIyc.png", //Teikhos Ta'var's Lightsaber
+"305_48":"https://i.imgur.com/IBA7USi.png", //Echo of Vauzem
 
 //playtesting
 "501_1":"https://res.starwarsccg.org/cards/Virtual20-Light/hires/beskardeflection.png",

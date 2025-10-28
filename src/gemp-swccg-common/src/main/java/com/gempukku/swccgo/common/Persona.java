@@ -264,6 +264,7 @@ public enum Persona implements Filterable {
     FERFIEK_CHAWA("Ferfiek Chawa"),
     SARLAC("S.A.R.L.a.C"),
     SOLARI("Solari"),
+    ECHO_OF_VAUZEM("Echo of Vauzem"),
 
     // Vehicles
     JABBAS_SAIL_BARGE("Jabba's Sail Barge"),
