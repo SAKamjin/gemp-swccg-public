@@ -29,7 +29,7 @@ public class Card304_094 extends AbstractSite {
         setLocationLightSideGameText("Your docking bay transit from here requires 1 Force.");
         addIcon(Icon.DARK_FORCE, 1);
         addIcon(Icon.LIGHT_FORCE, 1);
-        addIcons(Icon.SCOMP_LINK, Icon.EXTERIOR_SITE, Icon.PLANET);
+        addIcons(Icon.SCOMP_LINK,Icon.INTERIOR_SITE, Icon.EXTERIOR_SITE, Icon.PLANET);
         addKeywords(Keyword.DOCKING_BAY, Keyword.ULRESS_SITE);
     }
 
