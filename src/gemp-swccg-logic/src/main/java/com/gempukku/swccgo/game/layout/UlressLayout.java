@@ -45,7 +45,7 @@ public class UlressLayout extends AbstractSystemLayout {
                         new LocationGroup("Ulress Space Port 'Docking Bay'", Filters.Ulress_Docking_Bay),
                         //  B) Exterior Sites
                         new LocationGroup("Exterior sites", Filters.and(Filters.exterior_site, Filters.not(Filters.or(Filters.interior_site,
-                                Filters.Ulress_Club_Antonia, Filters.Club_Antonia_Bar, Filters.Club_Antonia_Stage, Filters.Club_Antonia_Backstage, Filters.Ixtals_Garage)), Filters.partOfSystem(systemName))),
+                                Filters.Ulress_Club_Antonia, Filters.Club_Antonia_Bar, Filters.Club_Antonia_Stage, Filters.Club_Antonia_Backstage, Filters.Ixtals_Garage, Filters.Ulress_Docking_Bay)), Filters.partOfSystem(systemName))),
                         //  C) Club Antonia
                         new LocationGroup("Club Antonia", Filters.Ulress_Club_Antonia),
 						//  D) Club Antonia Bar
