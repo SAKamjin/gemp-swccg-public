@@ -19301,7 +19301,6 @@ public class Filters {
     public static final Filter Take_Them_Away = Filters.title(Title.Take_Them_Away);
     public static final Filter Take_Your_Fathers_Place = Filters.title(Title.Take_Your_Fathers_Place);
     public static final Filter Takeel = Filters.title(Title.Takeel);
-    public static final Filter Taking_Control_Of_The_Weapon = Filters.title(Title.Taking_Control_Of_The_Weapon);
     public static final Filter Takodana_system = Filters.and(CardSubtype.SYSTEM, Filters.title(Title.Takodana));
     public static final Filter Tala_1 = Filters.title(Title.Tala_1);
     public static final Filter Tala_2 = Filters.title(Title.Tala_2);
@@ -19621,7 +19620,6 @@ public class Filters {
 	public static final Filter Dandoran_site = Filters.and(Filters.partOfSystem(Title.Dandoran), CardSubtype.SITE);
 	public static final Filter TIE_WI = Filters.modelType(ModelType.TIE_WI);
 	public static final Filter Jedi_Levitation = Filters.title(Title.Jedi_Levitation);
-	public static final Filter Weapon_Levitation = Filters.title(Title.Weapon_Levitation);
 	public static final Filter Shadow_Academy = Filters.title(Title.Shadow_Academy);
 	public static final Filter ALETHIA = Filters.persona(Persona.ALETHIA);
 	public static final Filter Through_Passion_I_Gain_Strength = Filters.title(Title.Through_Passion_I_Gain_Strength);

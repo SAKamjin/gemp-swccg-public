@@ -1364,7 +1364,6 @@ public interface Title {
 	String A_Gathering_Storm = "A Gathering Storm";
 	String Marick_Tyris_Arconae_Exarch = "Marick Tyris Arconae, Exarch";
 	String Jedi_Levitation = "Jedi Levitation";
-	String Weapon_Levitation = "Weapon Levitation";
 	String Shadow_Academy = "The Shadow Academy";
 	String Through_Passion_I_Gain_Strength = "Through Passion, I Gain Strength";
 	String Peace_Is_A_Lie_There_Is_Only_Passion = "Peace Is A Lie, There Is Only Passion";
