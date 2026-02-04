@@ -136,6 +136,8 @@ public class PackagedProductStorageBuilder {
             packStorage.addPackagedProduct(product.getProductName(), product);
             product = new VirtualAlternateImageBoosterPack(library, 7);
             packStorage.addPackagedProduct(product.getProductName(), product);
+            product = new VirtualAlternateImageBoosterPack(library, 8);
+            packStorage.addPackagedProduct(product.getProductName(), product);
 
             // Add Enhanced Packs
             product = new EnhancedPremierePack_BobaFett(library);

@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.junit.Assert.assertSame;
+
+
 /**
  * While the ability to programmatically execute games is a boon to testing efforts, the real strength of this test rig
  * is in bald-faced cheating to arrange the table however we like without needing to abide by all the costs,
@@ -73,6 +76,9 @@ public interface ZoneManipulation extends TestBase{
 	 * @param cards The cards to move
 	 */
 	default void MoveCardsToLocation(PhysicalCardImpl location, PhysicalCardImpl...cards) {
+        assertSame(Zone.LOCATIONS,location.getZone());
+		//TODO add assert that cards is not empty?
+		//TODO add assert that location is top location?
 		Arrays.stream(cards).forEach(card -> {
 			//If it's not in play, we have to use a different method that properly activates the card
 			if(!card.getZone().isInPlay()) {
@@ -394,6 +400,22 @@ public interface ZoneManipulation extends TestBase{
 	}
 
 	/**
+	 * Makes a character 'go missing'
+	 * @param character The card to become missing.
+	 */
+	default void MakeCardGoMissing(PhysicalCardImpl character) {
+		gameState().makeGoMissing(game(), character);
+	}
+
+	/**
+	 * Makes a character undercover
+	 * @param character The card to become undercover (must be spy or cover will be automatically broken)
+	 */
+	default void MakeCardGoUndercover(PhysicalCardImpl character) {
+		gameState().putUndercover(character);
+	}
+
+	/**
 	 * Causes a card to be attached to the given vehicle or ship as a passenger, and updates all the appropriate state
 	 * on each card.  This does not follow the game procedure and is cheating the card into place.
 	 * @param vehicle The vehicle (or ship) that will hold the passenger(s).
@@ -427,6 +449,25 @@ public interface ZoneManipulation extends TestBase{
 			}
 			else {
 				gameState().attachCardInPilotCapacitySlot(pilot, vehicle);
+			}
+		});
+	}
+
+	/**
+	 * Causes a card to be attached to the given vehicle or ship as a vehicle capacity occupant, and updates all the appropriate state
+	 * on each card.  This does not follow the game procedure and is cheating the card into place.
+	 * @param vehicleOrStarship The vehicle (or ship) that will hold the vehicle(s).
+	 * @param vehicles One or more vehicles to board.
+	 */
+	default void BoardAsVehicle(PhysicalCardImpl vehicleOrStarship, PhysicalCardImpl...vehicles) {
+		Arrays.stream(vehicles).forEach(vehicle -> {
+			var originalZone = vehicle.getZone();
+			RemoveCardZone(vehicle);
+			if(originalZone.isInPlay()) {
+				gameState().moveCardToAttachedInVehicleCapacitySlot(vehicle, vehicleOrStarship);
+			}
+			else {
+				gameState().attachCardInVehicleCapacitySlot(vehicle, vehicleOrStarship);
 			}
 		});
 	}

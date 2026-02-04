@@ -9,6 +9,7 @@ public enum ModifyGameTextType {
 
     // Game text modifier flags
     // (Naming convention: CardIdentifier__ModificationIdentifier)
+    A_BRIGHT_CENTER_TO_THE_UNIVERSE__CANCELS_OPPONENTS_FORCE_DRAIN_MODIFIERS_EVERYWHERE("Cancels opponent's Force drain modifiers everywhere"),
     ALWAYS_THINKING_WITH_YOUR_STOMACH__MISSING_TREATED_AS_LANDSPEED_0("'Missing' treated as 'landspeed = 0 for remainder of turn"),
     BOONTA_EVE_PODRACE__RETRIEVE_FORCE_INTO_HAND("Take any or all force retrieved into hand"),
     BRING_HIM_BEFORE_ME__MAY_NOT_CAPTURE_LUKE("May not capture Luke"),
@@ -91,6 +92,7 @@ public enum ModifyGameTextType {
     WALKER_GARRISON__ADDITIONAL_SITE_TO_GAIN_FORCE_DRAIN_BONUS("Additional site required for Force drain bonus"),
     WAT_TAMBOR__IGNORED_BY_WHERE_ARE_THOSE_DROIDEKAS("Ignores Wat Tambor"),
     WATTOS_BOX__MAY_DEPLOY_REGARDLESS_OF_RACE_TOTAL("May deploy regardless of race total"),
+    WEAPON_LEVITATION_MAY_NOT_STEAL_WEAPONS("May not steal weapons"),
     WELL_HANDLE_THIS__ONLY_TARGET_UNDERCOVER_SPIES_AND_5D6RA7("May target only Undercover spies and 5D6-RA-7"),
     VADER__DOES_NOT_ADD_1_TO_BATTLE_DESTINY("Does not add 1 to battle destiny"),
     YAVIN_SENTRY__APPLIES_ALL_MODIFIERS("Applies all modifiers"),
