@@ -29,6 +29,7 @@ public class Card305_014 extends AbstractAlien {
         super(Side.LIGHT, 1, 4, 3, 5, 5, "Syrena Valkar", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.U);
         setLore("Leader of the Knights of Allusis. One of the few Light-side Force users who can channel Force Lightning without becoming corrupted by the Dark side. Musician, playing the hallikset.");
         setGameText("Whenever a player wins a battle here, that player gains 1 Force. May be targeted by Uncontrolled Force Lightning.");
+        addPersona(Persona.SYRENA);
         addKeywords(Keyword.FEMALE, Keyword.LEADER, Keyword.MUSICIAN);
         addIcons(Icon.ABT, Icon.COU, Icon.WARRIOR);
     }

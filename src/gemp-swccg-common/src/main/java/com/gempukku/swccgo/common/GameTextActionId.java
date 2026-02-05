@@ -1074,6 +1074,7 @@ public enum GameTextActionId {
     COUNCILLOR_TUREL_SORENN__DOWNLOAD_LIGHTSABER_FROM_LOST_PILE(true, true),
     MIHOSHI_KEIBATUS__DOWNLOAD_TUREL_OR_TEIKHOS(true, true),
     ECHO_OF_VAUZEM__DOWNLOAD_SEPHI(true, true),
+    LIGHT_MORNING_BRUNCH__DOWNLOAD_SYRENA(true, true),
 
     // Per captive
     DUNGEON__RETRIEVE_FORCE(false, false, true, false),

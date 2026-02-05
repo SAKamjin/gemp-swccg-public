@@ -19758,6 +19758,8 @@ public class Filters {
     public static final Filter interior_Quermia_site = Filters.and(Icon.INTERIOR_SITE, Filters.partOfSystem(Title.Quermia));
     public static final Filter PLAG = Filters.icon(Icon.PLAG);
     public static final Filter Deploys_aboard_Echo_of_Vauzem = Filters.or(Filters.persona(Persona.ECHO_OF_VAUZEM), Filters.locationAndCardsAtLocation(Filters.siteOfStarshipOrVehicle(Persona.ECHO_OF_VAUZEM, false)));
+    public static final Filter SYRENA = Filters.persona(Persona.SYRENA);
+    public static final Filter Light_Morning_Brunch = Filters.title(Title.Light_Morning_Brunch);
 
 
     private static class SpotFilterCardInPlayVisitor implements PhysicalCardVisitor {

@@ -1450,5 +1450,6 @@ public interface Title {
     String Get_Them_Out_Of_My_Sight = "Get Them Out Of My Sight";
     String Hidden_Corridors = "Hidden Corridors";
     String Quermia_Senate_Hallway = "Quermia: Senate Hallway";
+    String Light_Morning_Brunch = "Light Morning Brunch";
 
 }

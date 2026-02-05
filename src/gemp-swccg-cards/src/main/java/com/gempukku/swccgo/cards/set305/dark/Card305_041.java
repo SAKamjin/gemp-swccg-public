@@ -40,6 +40,7 @@ import java.util.List;
 public class Card305_041 extends AbstractCharacterWeapon {
     public Card305_041() {
         super(Side.DARK, 1, "Kamjin's Double-Bladed Lightsaber", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.UR);
+        setAsHorizontal(true);
         setLore("When Kamjin combines his two lightsabers they become a deadly saber staff. The dual blades merge and produce an indigo blade.");
         setGameText("Deploy on Kamjin. Adds 1 to Kamjin's lightsaber combat total. May use 2 Force to add 2 to Force drain where present. Twice per battle, may target a character. Draw two destiny. Target hit, and its forfeit = 0, if total > defense value. May not be stolen.");
         addPersona(Persona.KAMJINS_DOUBLE_BLADED_LIGHTSABER);

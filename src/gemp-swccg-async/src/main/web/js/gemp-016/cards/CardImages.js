@@ -4066,6 +4066,10 @@ const fixedImages = {
 "305_46":"https://i.imgur.com/zrHZZOx.png", //Turel Sorenn's Lightsaber
 "305_47":"https://i.imgur.com/t9PRIyc.png", //Teikhos Ta'var's Lightsaber
 "305_48":"https://i.imgur.com/IBA7USi.png", //Echo of Vauzem
+"305_49":"https://i.imgur.com/Z3SP80U.png", //Let's Go Right
+"305_50":"https://i.imgur.com/zS8AcaZ.png", //Guardian Syrena Valkar
+"305_51":"https://i.imgur.com/YWzAEij.png", //Light Morning Brunch
+"305_52":"https://i.imgur.com/tpnOLTk.png", //DG-29 Heavy Blaster Pistol
 
 //playtesting
 "501_1":"https://res.starwarsccg.org/cards/Virtual20-Light/hires/beskardeflection.png",
