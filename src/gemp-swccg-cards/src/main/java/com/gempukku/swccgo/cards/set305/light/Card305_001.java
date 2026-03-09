@@ -40,6 +40,7 @@ public class Card305_001 extends AbstractAlien {
         setGameText("Adds 1 to anything he pilots. While armed with a lightsaber, adds 2 to his defense value. During battle, may lose 2 Force to add one battle destiny. Immune to attrition < 6.");
         addIcons(Icon.ABT, Icon.COU, Icon.PILOT, Icon.WARRIOR);
         addKeyword(Keyword.LEADER);
+        addPersona(Persona.EDGAR);
     }
 
     @Override

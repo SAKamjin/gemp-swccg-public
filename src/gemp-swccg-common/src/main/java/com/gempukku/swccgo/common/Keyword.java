@@ -223,7 +223,12 @@ public enum Keyword implements Filterable {
 	CLAUDIUS_PALACE_SITE("Claudius Palace Site", false),
 	ULRESS_SITE("Ulress Site", false),
     KOUDOOINE_SITE("Koudooine Site", false),
-    QUERMIA_SENATE_SITE("Quermia: Senate Site", false);
+    QUERMIA_SENATE_SITE("Quermia: Senate Site", false),
+    COU_SUMMIT_GUARD("Odan-Urr Summit Guard",true, true),
+    SAPPHIRE_SQUADRON("Sapphire Squadron", true),
+    NIHILGENIA("Nihilgenia", true, true),
+    CONCUSSION_MISSILES("Concussion Missiles", false);
+
 
 
     private String _humanReadable;

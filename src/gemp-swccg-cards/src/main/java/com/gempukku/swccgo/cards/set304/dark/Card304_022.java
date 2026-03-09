@@ -41,6 +41,7 @@ public class Card304_022 extends AbstractAlien {
         setLore("A long time member of Scholae Palatinae, he rose quickly through the ranks before disappearing after being a Quaestor and Left Hand of Justice. His return has raised questions of his whereabouts.");
         setGameText("Draws one battle destiny if unable to otherwise. During battle, if with your other Dark Jedi, may cancel the immunity to attrition of a Jedi here.");
         addKeywords(Keyword.HAND, Keyword.MALE);
+        addPersona(Persona.BRUJAH);
         addIcons(Icon.CSP, Icon.WARRIOR);
     }
 

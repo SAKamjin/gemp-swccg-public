@@ -223,6 +223,17 @@ public enum Persona implements Filterable {
     TEIKHOS("Teikhos Ta'var"),
     TUREL("Turel Sorenn"),
     SYRENA("Syrena Valkar"),
+    EDGAR("Edgar Drachen"),
+    MIYORI("Miyori Theed"),
+    NOZOMI("Nozomi Keldabe"),
+    BRUJAH("Vincent Brujah"),
+    JONSILVON("Jon Silvon"),
+    TAVIANRUSK("Tavian Rusk"),
+    KEIRA_THALUNE("Keira Thalune"),
+    KEN_IODE("Kenneth 'Ken' Iode"),
+    FRENEK_MAUSMA("Frenek Mausma"),
+    TRAVITZ("Travitz"),
+    JI("Ji"),
 
 
     // Starships
@@ -310,6 +321,8 @@ public enum Persona implements Filterable {
     KAMJINS_DOUBLE_BLADED_LIGHTSABER("Kamjin's Double-Bladed Lightsaber"),
     TUREL_SORENNS_LIGHTSABER("Turel Sorenn's Lightsaber"),
     TEIKHOS_TAVARS_LIGHTSABER("Teikhos Ta'var's Lightsaber"),
+    MIHOSHIS_KUROTSUBAKI("Kurotsubaki"),
+    JON_SILVON_BESKAR_SPEAR("Rising Sun")
 
 
     ;

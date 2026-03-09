@@ -4070,6 +4070,35 @@ const fixedImages = {
 "305_50":"https://i.imgur.com/zS8AcaZ.png", //Guardian Syrena Valkar
 "305_51":"https://i.imgur.com/YWzAEij.png", //Light Morning Brunch
 "305_52":"https://i.imgur.com/tpnOLTk.png", //DG-29 Heavy Blaster Pistol
+"305_53":"https://i.imgur.com/pk9MVDQ.png", //Kurotsubaki
+"305_54":"https://i.imgur.com/Uf5tr9g.png", //Councillor of Uur, Edgar Drachen
+"305_55":"https://i.imgur.com/J960Jie.png", //Miyori Theed
+"305_56":"https://i.imgur.com/bNEyBYT.jpg", //Sorami Iziz
+"305_57":"https://i.imgur.com/QtiJDaJ.png", //Nozomi Keldabe
+"305_58":"https://i.imgur.com/kLfd1xv.png", //Jeff Fausell
+"305_59":"https://i.imgur.com/dMIaQU9.png", //Raider Jon Silvon
+"305_60":"https://i.imgur.com/WeS96MI.png", //Jon Silvon Beskar Spear
+"305_61":"https://i.imgur.com/xl5MgNB.png", //Odan-Urr Summit Guard
+"305_62":"https://i.imgur.com/hU8f4NG.png", //Corporal Ravik Dorne
+"305_63":"https://i.imgur.com/gRsM9jm.png", //Specialist Tavian Rusk
+"305_64":"https://i.imgur.com/1ugPIl9.png", //Lieutenant Garron Vellisar
+"305_65":"https://i.imgur.com/nymnMmu.png", //Sergeant Keira Thalune
+"305_66":"https://i.imgur.com/cMbkEXs.png", //Ken Iode, Sapphire Leader
+"305_67":"https://i.imgur.com/ZYNJH1u.png", //Sapphire 1
+"305_68":"https://i.imgur.com/MzhEgIz.png", //Frenek Mausma, Sapphire 2
+"305_69":"https://i.imgur.com/bb9HAu8.png", //Sapphire 2
+"305_70":"https://i.imgur.com/p11GviN.png", //Travitz, Sapphire 3
+"305_71":"https://i.imgur.com/CyoPlSf.png", //Sapphire 3
+"305_72":"https://i.imgur.com/2SMiDcV.png", //Ji
+"305_73":"https://i.imgur.com/oJ8a7s3.png", //Chirdo, Sapphire 4
+"305_74":"https://i.imgur.com/Vrc0HFa.png", //Sapphire 4
+"305_75":"https://i.imgur.com/uPRUkG8.png", //Nivarra Salk’to, Sapphire 5
+"305_76":"https://i.imgur.com/8f4fwCZ.png", //Sapphire 5
+"305_77":"https://i.imgur.com/RQa4XGH.png", //Sapphire Fighter
+"305_78":"https://i.imgur.com/0Q6x9Sx.png", //Concussion Missiles
+"305_79":"https://i.imgur.com/lyH9TpQ.png", //There She Goes!
+"305_80":"https://i.imgur.com/IODWQCG.png", //My Loyal Nihilgenia
+"305_81":"https://i.imgur.com/1LaS2tH.png", //We've Gotta Get Closer
 
 //playtesting
 "501_1":"https://res.starwarsccg.org/cards/Virtual20-Light/hires/beskardeflection.png",
@@ -4637,6 +4666,7 @@ const fixedImages = {
 "305_20ai":"https://i.imgur.com/No4F7Ix.png", //Declan Roark
 "305_22ai":"https://i.imgur.com/jZIIzNb.png", //Darth Sarin, Grand Master
 "305_24ai":"https://i.imgur.com/9cM8NTI.png", //Declan Roark's Blaster Rifle
+"305_66ai":"https://i.imgur.com/4t5YQ79.jpg", //Ken Iode, Sapphire Leader
 
 
 };

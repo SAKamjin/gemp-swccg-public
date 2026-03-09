@@ -1451,5 +1451,15 @@ public interface Title {
     String Hidden_Corridors = "Hidden Corridors";
     String Quermia_Senate_Hallway = "Quermia: Senate Hallway";
     String Light_Morning_Brunch = "Light Morning Brunch";
+    String Sapphire_1 = "Sapphire 1";
+    String Sapphire_2 = "Sapphire 2";
+    String Sapphire_3 = "Sapphire 3";
+    String Sapphire_4 = "Sapphire 4";
+    String Sapphire_5 = "Sapphire 5";
+    String Sapphire_Fighter = "Sapphire Fighter";
+    String Frenek_Mausma = "Frenek Mausma, Sapphire 2";
+    String Vesper_II = "Vesper II";
+    String Chirdo = "Chirdo, Sapphire 4";
+    String Nivarra = "Nivarra Salk’to, Sapphire 5";
 
 }

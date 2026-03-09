@@ -19760,6 +19760,32 @@ public class Filters {
     public static final Filter Deploys_aboard_Echo_of_Vauzem = Filters.or(Filters.persona(Persona.ECHO_OF_VAUZEM), Filters.locationAndCardsAtLocation(Filters.siteOfStarshipOrVehicle(Persona.ECHO_OF_VAUZEM, false)));
     public static final Filter SYRENA = Filters.persona(Persona.SYRENA);
     public static final Filter Light_Morning_Brunch = Filters.title(Title.Light_Morning_Brunch);
+    public static final Filter MIYORI = Filters.persona(Persona.MIYORI);
+    public static final Filter Quermia_Senate_Site = Filters.keyword(Keyword.QUERMIA_SENATE_SITE);
+    public static final Filter NOZOMI = Filters.persona(Persona.NOZOMI);
+    public static final Filter Brujah = Filters.persona(Persona.BRUJAH);
+    public static final Filter JONSILVON = Filters.persona(Persona.JONSILVON);
+    public static final Filter Rising_Sun = Filters.persona(Persona.JON_SILVON_BESKAR_SPEAR);
+    public static final Filter TAVIANRUSK = Filters.persona(Persona.TAVIANRUSK);
+    public static final Filter Keira_Thalune = Filters.persona(Persona.KEIRA_THALUNE);
+    public static final Filter Sapphire_Squadron_starfigher = Filters.and(Keyword.SAPPHIRE_SQUADRON, CardSubtype.STARFIGHTER);
+    public static final Filter Ken_Iode = Filters.persona(Persona.KEN_IODE);
+    public static final Filter Frenek_Mausma = Filters.title(Title.Frenek_Mausma);
+    public static final Filter Sapphire_1 = Filters.title(Title.Sapphire_1);
+    public static final Filter Sapphire_2 = Filters.title(Title.Sapphire_2);
+    public static final Filter Sapphire_3 = Filters.title(Title.Sapphire_3);
+    public static final Filter Sapphire_4 = Filters.title(Title.Sapphire_4);
+    public static final Filter Sapphire_5 = Filters.title(Title.Sapphire_5);
+    public static final Filter Sapphire_Squadron_pilot = Filters.and(CardCategory.CHARACTER, Icon.PILOT, Filters.or(Keyword.SAPPHIRE_SQUADRON, Filters.aboard(Filters.keyword(Keyword.SAPPHIRE_SQUADRON))));
+    public static final Filter Quermia_system = Filters.and(CardSubtype.SYSTEM, Filters.title(Title.Quermia));
+    public static final Filter Travitz = Filters.persona(Persona.TRAVITZ);
+    public static final Filter Vesper_II = Filters.title(Title.Vesper_II);
+    public static final Filter Ji = Filters.persona(Persona.JI);
+    public static final Filter Chirdo = Filters.title(Title.Chirdo);
+    public static final Filter Nivarra = Filters.title(Title.Nivarra);
+    public static final Filter ECHO_OF_VAUZEM = Filters.persona(Persona.ECHO_OF_VAUZEM);
+    public static final Filter Sapphire_Fighter = Filters.title(Title.Sapphire_Fighter);
+    public static final Filter Nihilgenia = Filters.keyword(Keyword.NIHILGENIA);
 
 
     private static class SpotFilterCardInPlayVisitor implements PhysicalCardVisitor {

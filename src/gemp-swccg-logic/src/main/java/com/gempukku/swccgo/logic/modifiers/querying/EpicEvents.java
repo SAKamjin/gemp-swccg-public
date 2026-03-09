@@ -44,6 +44,20 @@ public interface EpicEvents extends BaseQuery, Destiny {
 	}
 
 	/**
+	 * Gets the 'blow away' Echo of Vauzem attempt total.
+	 * @param gameState the game state
+	 * @param baseTotal the base total
+	 * @return the total
+	 */
+	default float getBlowAwayEchoofVauzemAttemptTotal(GameState gameState, float baseTotal) {
+		float result = baseTotal;
+		for (Modifier modifier : getModifiers(gameState, ModifierType.BLOW_AWAY_ECHO_OF_VAUZEM_ATTEMPT_TOTAL)) {
+			result += modifier.getValue(gameState, query(), (PhysicalCard) null);
+		}
+		return Math.max(0, result);
+	}
+
+	/**
 	 * Gets the 'blow away' Shield Gate attempt total.
 	 * @param gameState the game state
 	 * @param baseTotal the base total

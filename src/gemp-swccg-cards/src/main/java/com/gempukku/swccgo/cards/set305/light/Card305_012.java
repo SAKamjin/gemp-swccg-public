@@ -4,13 +4,7 @@ import com.gempukku.swccgo.cards.AbstractCapitalStarship;
 import com.gempukku.swccgo.cards.AbstractPermanentAboard;
 import com.gempukku.swccgo.cards.AbstractPermanentPilot;
 import com.gempukku.swccgo.cards.evaluators.HereEvaluator;
-import com.gempukku.swccgo.common.ExpansionSet;
-import com.gempukku.swccgo.common.Icon;
-import com.gempukku.swccgo.common.ModelType;
-import com.gempukku.swccgo.common.PlayCardOptionId;
-import com.gempukku.swccgo.common.Rarity;
-import com.gempukku.swccgo.common.Side;
-import com.gempukku.swccgo.common.Uniqueness;
+import com.gempukku.swccgo.common.*;
 import com.gempukku.swccgo.filters.Filter;
 import com.gempukku.swccgo.filters.Filters;
 import com.gempukku.swccgo.game.PhysicalCard;
@@ -32,7 +26,7 @@ import java.util.List;
  */
 public class Card305_012 extends AbstractCapitalStarship {
     public Card305_012() {
-        super(Side.LIGHT, 1, 9, 9, 8, null, 4, 10, "Vesper II", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.UR);
+        super(Side.LIGHT, 1, 9, 9, 8, null, 4, 10, Title.Vesper_II, Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.UR);
         setAsHorizontal(true);
         setLore("Following the attack by Starkiller Base, numerous New Republic vessels found their way into the hands of friendly worlds. It is unknown where Clan Odan-Urr acquired the Vesper II.");
         setGameText("May add 5 pilots, 6 passengers, 1 vehicle and 3 starfighters. Has ship-docking capability. Permanent pilot aboard provides ability of 2. Adds 1 to attrition against opponent here for each piloted [COU] starship here. Immune to attrition < 12");
@@ -42,6 +36,7 @@ public class Card305_012 extends AbstractCapitalStarship {
         setPassengerCapacity(6);
         setVehicleCapacity(1);
         setStarfighterCapacity(3);
+        setMatchingPilotFilter(Filters.Ji);
     }
 
     @Override
