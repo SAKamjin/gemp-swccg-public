@@ -4100,6 +4100,8 @@ const fixedImages = {
 "305_80":"https://i.imgur.com/IODWQCG.png", //My Loyal Nihilgenia
 "305_81":"https://i.imgur.com/1LaS2tH.png", //We've Gotta Get Closer
 "305_82":"https://i.imgur.com/H15smH1.png", //It's Being Held Together
+"305_83":"https://i.imgur.com/HBpS8PZ.png", //We're Here To Help
+"305_84":"https://i.imgur.com/hsnQH5c.png", //Hubris Of A Jedi
 
 //playtesting
 "501_1":"https://res.starwarsccg.org/cards/Virtual20-Light/hires/beskardeflection.png",
