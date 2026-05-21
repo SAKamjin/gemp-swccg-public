@@ -86,6 +86,7 @@ public enum Species implements Filterable {
     PALOWICK("Pa'lowick", true),
     QIRAASH("Qiraash", true),
     QUARREN("Quarren", true),
+    QUERMIAN("Quermian",true),
     QUORSAV("Quor'sav", true),
     RANAT("Ranat", true),
     RODIAN("Rodian", true),

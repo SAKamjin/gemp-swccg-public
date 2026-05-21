@@ -1461,5 +1461,16 @@ public interface Title {
     String Vesper_II = "Vesper II";
     String Chirdo = "Chirdo, Sapphire 4";
     String Nivarra = "Nivarra Salk’to, Sapphire 5";
+    String Vaelor_Quis = "Vaelor Quis";
+    String Senate_Courtyard = "Quermia: Senate Courtyard";
+    String Senate_Hallway = "Quermia: Senate Hallway";
+    String A_Senate_Motion = "A Senate Motion";
+    String Speaker_We_Have_The_Floor = "Speaker We Have The Floor";
+    String Echo_of_Vauzem_Bridge = "Echo of Vauzem: Bridge";
+    String Quermia_Forest = "Quermia: Forest";
+    String Aliso = "Aliso";
+    String Selikas_Lightsaber = "Selika Roh di Plagia's Lightsaber";
+    String Selika_Strikes = "Selika Strikes";
+    String Restart_The_Droid_Factory = "Restart The Droid Factory";
 
 }

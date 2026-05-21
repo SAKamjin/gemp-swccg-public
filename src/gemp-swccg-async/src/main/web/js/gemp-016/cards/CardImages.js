@@ -4065,7 +4065,7 @@ const fixedImages = {
 "305_45":"https://i.imgur.com/GjhYmHy.png", //Kalen Joss
 "305_46":"https://i.imgur.com/zrHZZOx.png", //Turel Sorenn's Lightsaber
 "305_47":"https://i.imgur.com/t9PRIyc.png", //Teikhos Ta'var's Lightsaber
-"305_48":"https://i.imgur.com/IBA7USi.png", //Echo of Vauzem
+"305_48":"https://i.imgur.com/sgjgoJp.png", //Echo of Vauzem
 "305_49":"https://i.imgur.com/Z3SP80U.png", //Let's Go Right
 "305_50":"https://i.imgur.com/zS8AcaZ.png", //Guardian Syrena Valkar
 "305_51":"https://i.imgur.com/YWzAEij.png", //Light Morning Brunch
@@ -4102,6 +4102,34 @@ const fixedImages = {
 "305_82":"https://i.imgur.com/H15smH1.png", //It's Being Held Together
 "305_83":"https://i.imgur.com/HBpS8PZ.png", //We're Here To Help
 "305_84":"https://i.imgur.com/hsnQH5c.png", //Hubris Of A Jedi
+"305_85":"https://i.imgur.com/xuQkMeC.png", //Quermia Celebration
+"305_86":"https://i.imgur.com/VjXVbNs.png", //Vaelor Quis
+"305_87":"https://i.imgur.com/98UlEbw.png", //Control Operation
+"305_88":"https://i.imgur.com/QjEeSqx.png", //You Go First...
+"305_89":"https://i.imgur.com/t0L2DqF.png", //Here's Your Answer
+"305_90":"https://i.imgur.com/Qj6fhZW.png", //I'll Make Time For This
+"305_91":"https://i.imgur.com/N0TuWru.png", //Echo of Vauzem: Docking Bay (Light)
+"305_92":"https://i.imgur.com/7ZDXFyl.png", //Quermia: Senate Courtyard (Light)
+"305_93":"https://i.imgur.com/dC950Tg.png", //Quermia: Senate Courtyard (Dark)
+"305_94":"https://i.imgur.com/Vn0ChgR.png", //Quermia: Senate Docking Bay (Light)
+"305_95":"https://i.imgur.com/xbyMHw6.png", //Quermia: Senate Docking Bay (Dark)
+"305_96":"https://i.imgur.com/OwfZxSB.png", //Quermia: Senate Hallway (Light)
+"305_97":"https://i.imgur.com/Zwz25nI.png", //Quermia: Senate Hallway (Dark)
+"305_98":"https://i.imgur.com/DQaO3An.png", //A Senate Motion
+"305_98_BACK":"https://i.imgur.com/QQ3uIoN.png", //Speaker We Have The Floor
+"305_99":"https://i.imgur.com/52A2AY3.png", //Lady Morvayne Korr
+"305_100":"https://i.imgur.com/pfsBvNF.png", //Echo of Vauzem: Bridge (Dark)
+"305_101":"https://i.imgur.com/rLFgOkz.jpg", //Quermia: Forest (Dark)
+"305_102":"https://i.imgur.com/UvXSMa0.png", //Aliso: Docking Bay (Dark)
+"305_103":"https://i.imgur.com/oxKfxg5.png", //Selika Roh di Plagia, Dread Lord
+"305_104":"https://i.imgur.com/J2XbGqM.png", //Selika Roh di Plagia's Lightsaber
+"305_105":"https://i.imgur.com/qsoc0uC.png", //Selika Strikes
+"305_106":"https://i.imgur.com/D4Hwp5m.png", //Lorn Aledes
+"305_107":"https://i.imgur.com/lV6HbsP.png", //Quermia Occupation
+"305_108":"https://i.imgur.com/XhlNs6Q.png", //Restart The Droid Factory
+"305_109":"https://i.imgur.com/8Y8Eiue.png", //VD-9
+
+
 
 //playtesting
 "501_1":"https://res.starwarsccg.org/cards/Virtual20-Light/hires/beskardeflection.png",
@@ -4670,6 +4698,8 @@ const fixedImages = {
 "305_22ai":"https://i.imgur.com/jZIIzNb.png", //Darth Sarin, Grand Master
 "305_24ai":"https://i.imgur.com/9cM8NTI.png", //Declan Roark's Blaster Rifle
 "305_66ai":"https://i.imgur.com/4t5YQ79.jpg", //Ken Iode, Sapphire Leader
+"305_103ai":"https://i.imgur.com/MiiJLpR.png", //Selika Roh di Plagia, Dread Lord
+"305_104ai":"https://i.imgur.com/gHtvBwO.png", //Selika Roh di Plagia's Lightsaber
 
 
 };

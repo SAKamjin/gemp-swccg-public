@@ -18016,7 +18016,7 @@ public class Filters {
     public static final Filter communications_droid = Filters.modelType(ModelType.COMMUNICATIONS);
     public static final Filter Communing = Filters.title(Title.Communing);
     public static final Filter Concussion_Grenade = Filters.title(Title.Concussion_Grenade);
-    public static final Filter Concussion_Missiles = Filters.title(Title.Concussion_Missiles);
+    public static final Filter Concussion_Missiles = Filters.titleContains("Concussion Missiles");
     public static final Filter cannon = Filters.or(Keyword.CANNON, Keyword.ION_CANNON, Keyword.LASER_CANNON, Keyword.AT_AT_CANNON);
     public static final Filter Control = Filters.title(Title.Control);
     public static final Filter Coolant_Shaft = Filters.title(Title.Coolant_Shaft);
@@ -19786,6 +19786,17 @@ public class Filters {
     public static final Filter ECHO_OF_VAUZEM = Filters.persona(Persona.ECHO_OF_VAUZEM);
     public static final Filter Sapphire_Fighter = Filters.title(Title.Sapphire_Fighter);
     public static final Filter Nihilgenia = Filters.keyword(Keyword.NIHILGENIA);
+    public static final Filter COU_SUMMIT_GUARD =Filters.keyword(Keyword.COU_SUMMIT_GUARD);
+    public static final Filter Quermian = Filters.species(Species.QUERMIAN);
+    public static final Filter exterior_Quermia_site = Filters.and(Icon.EXTERIOR_SITE, Filters.partOfSystem(Title.Quermia));
+    public static final Filter Vaelor_Quis = Filters.title(Title.Vaelor_Quis);
+    public static final Filter Hidden_Corridors = Filters.title(Title.Hidden_Corridors);
+    public static final Filter Security_Controls = Filters.and(CardType.EFFECT, Filters.titleContains("Security Control"));
+    public static final Filter Senate_Hallway = Filters.title(Title.Senate_Hallway);
+    public static final Filter Senate_Courtyard = Filters.title(Title.Senate_Courtyard);
+    public static final Filter MORVAYNE = Filters.persona(Persona.MORVAYNE);
+    public static final Filter Selika = Filters.persona(Persona.SELIKA);
+    public static final Filter Restart_The_Droid_Factory = Filters.title(Title.Restart_The_Droid_Factory);
 
 
     private static class SpotFilterCardInPlayVisitor implements PhysicalCardVisitor {

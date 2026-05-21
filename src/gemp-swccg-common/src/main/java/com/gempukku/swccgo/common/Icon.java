@@ -138,6 +138,7 @@ public enum Icon implements Filterable {
     TAL("Clan Taldryan"),
     VIZSLA("Clan Vizsla"),
     PLAG("Clan Plagueis"),
+    VAUZEM("Vauzem Dominion"),
     ;
 
     private String _humanReadable;

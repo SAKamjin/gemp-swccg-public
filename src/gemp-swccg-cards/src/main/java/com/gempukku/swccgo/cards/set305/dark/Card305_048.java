@@ -37,7 +37,7 @@ public class Card305_048 extends AbstractCapitalStarship {
         setLore("The Vauzem Dominion's premiere blockade ship was 'donated' by a mysterious backer with the intent of allowing the Dominion to take control of the droid factories on Quermia.");
         setGameText("May add 4 pilots, 4 passengers, 2 vehicles and 4 droid starfighters. Permanent pilot provides ability of 2. Once per game, may deploy a Sephi pilot aboard from Reserve Deck; reshuffle.");
         addPersona(Persona.ECHO_OF_VAUZEM);
-        addIcons(Icon.ABT, Icon.PILOT, Icon.NAV_COMPUTER);
+        addIcons(Icon.ABT, Icon.PILOT, Icon.NAV_COMPUTER, Icon.VAUZEM);
         addKeywords(Keyword.DROID_CONTROL_SHIP);
         addModelType(ModelType.TRADE_FEDERATION_BATTLESHIP);
         setPilotCapacity(4);

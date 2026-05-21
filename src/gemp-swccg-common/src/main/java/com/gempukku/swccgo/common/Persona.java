@@ -234,6 +234,9 @@ public enum Persona implements Filterable {
     FRENEK_MAUSMA("Frenek Mausma"),
     TRAVITZ("Travitz"),
     JI("Ji"),
+    MORVAYNE("Morvayne Korr"),
+    SELIKA("Selika Roh di Plagia"),
+    LORN("Lorn Aledes"),
 
 
     // Starships
@@ -322,7 +325,8 @@ public enum Persona implements Filterable {
     TUREL_SORENNS_LIGHTSABER("Turel Sorenn's Lightsaber"),
     TEIKHOS_TAVARS_LIGHTSABER("Teikhos Ta'var's Lightsaber"),
     MIHOSHIS_KUROTSUBAKI("Kurotsubaki"),
-    JON_SILVON_BESKAR_SPEAR("Rising Sun")
+    JON_SILVON_BESKAR_SPEAR("Rising Sun"),
+    SELIKAS_LIGHTSABER("Selika Roh di Plagia's Lightsaber"),
 
 
     ;
