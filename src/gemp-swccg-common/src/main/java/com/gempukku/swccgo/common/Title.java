@@ -1472,5 +1472,15 @@ public interface Title {
     String Selikas_Lightsaber = "Selika Roh di Plagia's Lightsaber";
     String Selika_Strikes = "Selika Strikes";
     String Restart_The_Droid_Factory = "Restart The Droid Factory";
+    String Plagueis_Probe_Droid = "Plagueis Probe Droid";
+    String She_Will_Bring_Him_To_Me = "She WilL Bring Him To Me";
+    String I_Know_Hes_Here = "I Know He's Here";
+    String The_Plagueis_Menace = "The Plagueis Menace";
+    String Quermian_Invasion = "Quermian Invasion";
+    String We_Control_The_Planet = "We Control The Planet";
+    String Son_Of_Laplamiz = "Son of Lap'lamiz";
+    String I_Have_Neglected_Your_Training = "I Have Neglected Your Training";
+    String Your_Training_Is_Now_Complete = "Your Training Is Now Complete";
+    String Impatient_Apprentice = "Impatient Apprentice";
 
 }

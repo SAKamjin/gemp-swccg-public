@@ -39,7 +39,7 @@ public class Card304_010 extends AbstractImperial {
         setLore("The newly appointed leader of House Caliburnus. Rayne has a long history with the Brotherhood. Rumors have begun circulating of her being involved with Derc Kast but no tabloid will run the story.");
         setGameText("Once per turn, one of your non-droid characters just lost from same site may be 'resurrected' (placed) in your Used Pile.");
         addPersona(Persona.RAYNE);
-		addKeywords(Keyword.FEMALE, Keyword.LEADER);
+		addKeywords(Keyword.FEMALE, Keyword.LEADER, Keyword.NIGHTSISTER);
         addIcons(Icon.WARRIOR, Icon.CSP);
     }
 

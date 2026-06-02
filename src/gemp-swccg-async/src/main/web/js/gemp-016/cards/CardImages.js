@@ -3835,13 +3835,13 @@ const fixedImages = {
 "302_51":"https://i.imgur.com/z9YkY1Q.png",
 
 "303_1":"https://i.imgur.com/Z0iQ6oC.png", //Marick Tyris Arconae, Exarch
-"303_2":"https://i.imgur.com/emuM6k9.png", //Arx: The Shadow Academy
-"303_3":"https://i.imgur.com/1HKs9Bv.png", //Arx: The Shadow Academy
+"303_2":"https://i.imgur.com/emuM6k9.png", //Arx: The Shadow Academy (Light)
+"303_3":"https://i.imgur.com/yisEyLl.png", //Arx: The Shadow Academy (Dark)
 "303_4":"https://i.imgur.com/p4tgdw4.png", //Shadow Academy: Training Grounds
 "303_5":"https://i.imgur.com/gsgxj6P.png", //Through Passion, I Gain Strength
 "303_6":"https://i.imgur.com/Gdr98oB.png", //Through Power, I Gain Victory
-"303_7":"https://i.imgur.com/CZNXErp.png", //Peace Is A Lie, There Is Only Passion
-"303_7_BACK":"https://i.imgur.com/cSKqjFn.png", //The Force Shall Free Me
+"303_7":"https://i.imgur.com/0w3JlrP.png", //Peace Is A Lie, There Is Only Passion
+"303_7_BACK":"https://i.imgur.com/SyvBrS2.png", //The Force Shall Free Me
 "303_8":"https://i.imgur.com/1EqJmTs.png", //Alethia Archenksova, Headmistress
 "303_9":"https://i.imgur.com/myo5LbE.png", //Hence Forth You Shall Be Known As...
 "303_10":"https://i.imgur.com/691oGmT.png", //Shadow Academy Holocron
@@ -4050,11 +4050,11 @@ const fixedImages = {
 "305_30":"https://i.imgur.com/gKDMlYl.png", //Quermia: Senate Council Chambers (Light)
 "305_31":"https://i.imgur.com/dhsIMyK.png", //Quermia: Senate Council Chambers (Dark)
 "305_32":"https://i.imgur.com/0kdemQL.png", //Baron Sirra Uvam
-"305_33":"https://i.imgur.com/5qChfCn.png", //Duke Airron Uleich
+"305_33":"https://i.imgur.com/lW9YxGF.png", //Duke Airron Uleich
 "305_34":"https://i.imgur.com/mo5XYFG.png", //Get Them Out Of My Sight
 "305_35":"https://i.imgur.com/7mETNZ6.png", //Mihoshi Keibatsu
 "305_36":"https://i.imgur.com/O19ziu2.png", //NR-N99 Persuader-Class Tank Droid
-"305_37":"https://i.imgur.com/63bY3Qu.png", //NR-N99 Assault Leader
+"305_37":"https://i.imgur.com/ZWq8gQV.png", //NR-N99 Assault Leader
 "305_38":"https://i.imgur.com/dQZeKy8.png", //Talon Jade
 "305_39":"https://i.imgur.com/xyVd1NG.png", //Talon Jade's Lightsabers
 "305_40":"https://i.imgur.com/csnOPrI.png", //Teikhos Ta'var, Jedi Defender
@@ -4121,13 +4121,47 @@ const fixedImages = {
 "305_100":"https://i.imgur.com/pfsBvNF.png", //Echo of Vauzem: Bridge (Dark)
 "305_101":"https://i.imgur.com/rLFgOkz.jpg", //Quermia: Forest (Dark)
 "305_102":"https://i.imgur.com/UvXSMa0.png", //Aliso: Docking Bay (Dark)
-"305_103":"https://i.imgur.com/oxKfxg5.png", //Selika Roh di Plagia, Dread Lord
+"305_103":"https://i.imgur.com/EzyyOgx.png", //Selika Roh di Plagia, Dread Lord
 "305_104":"https://i.imgur.com/J2XbGqM.png", //Selika Roh di Plagia's Lightsaber
 "305_105":"https://i.imgur.com/qsoc0uC.png", //Selika Strikes
 "305_106":"https://i.imgur.com/D4Hwp5m.png", //Lorn Aledes
 "305_107":"https://i.imgur.com/lV6HbsP.png", //Quermia Occupation
 "305_108":"https://i.imgur.com/XhlNs6Q.png", //Restart The Droid Factory
-"305_109":"https://i.imgur.com/8Y8Eiue.png", //VD-9
+"305_109":"https://i.imgur.com/6KQwGDJ.png", //VD-9
+"305_110":"https://i.imgur.com/sXLkJVO.png", //Morvayne Korr, Engineer
+"305_111":"https://i.imgur.com/ikuPvUi.png", //Caelum Reth
+"305_112":"https://i.imgur.com/QrogZYC.png", //Retha Kyr
+"305_113":"https://i.imgur.com/BtoXk3P.png", //9VD-10
+"305_114":"https://i.imgur.com/kn0l0zE.png", //7VD-009
+"305_115":"https://i.imgur.com/feIko5O.png", //VDB2-8PE
+"305_116":"https://i.imgur.com/mYTnJ8J.png", //Plagueis Probe Droid
+"305_117":"https://i.imgur.com/mCWTHEQ.png", //VDS-2543
+"305_118":"https://i.imgur.com/60fVAmY.png", //VDS-1587
+"305_119":"https://i.imgur.com/aJpHJ5l.png", //VDS-T813
+"305_120":"https://i.imgur.com/sbrHqIa.png", //Vauzem Dominion Droid Control Ship
+"305_121":"https://i.imgur.com/mVdyIND.png", //Vauzem Dominion Battleship
+"305_122":"https://i.imgur.com/CDoOYsY.png", //Vauzem Dominion Landing Craft
+"305_123":"https://i.imgur.com/WsKbWbc.png", //They're Falling Apart
+"305_124":"https://i.imgur.com/L5T8O3C.png", //Unfortunate Turn Of Events
+"305_125":"https://i.imgur.com/1TWDhdx.png", //She Will Bring Him To Me
+"305_126":"https://i.imgur.com/jXH9Md6.png", //I Know He's Here
+"305_127":"https://i.imgur.com/UhsaCrb.png", //The Plagueis Menance
+"305_128":"https://i.imgur.com/F0uV3ND.png", //Their Defenses Are Down
+"305_129":"https://i.imgur.com/iG460os.png", //Quermian Invasion
+"305_129_BACK":"https://i.imgur.com/GNsgKU9.png", //We Control The Planet
+"305_130":"https://i.imgur.com/YqM28N5.png", //I Have Neglected Your Training
+"305_130_BACK":"https://i.imgur.com/mjjK46y.png", // Your Training Is Now Complete
+"305_131":"https://i.imgur.com/kb2PtXD.png", //Son of Lap'lamiz
+"305_132":"https://i.imgur.com/ltNXaTm.png", //Iphis Melinoe's Mortuary Sword
+"305_133":"https://i.imgur.com/9ba4zPZ.png", //Iphis Melinoe
+"305_134":"https://i.imgur.com/3ZyvOBw.png", //Ichor Sword
+"305_135":"https://i.imgur.com/kYchyTe.png", //Sith Sword
+"305_136":"https://i.imgur.com/PY9wpdv.png", //Padawan Vez Hirundo
+"305_137":"https://i.imgur.com/C6ySLS2.png", //Rohan Lap'lamiz's Lightsaber
+"305_138":"https://i.imgur.com/s2r8LqM.png", //Komilia Lap'lamiz's Lightsaber
+"305_139":"https://i.imgur.com/jFKVnkx.png", //Komilia Lap'lamiz, Sith Acolyte
+"305_140":"https://i.imgur.com/C1lHOAK.png", //Kamjin Lap'lamiz, Sith Master
+"305_141":"https://i.imgur.com/BERCzQX.png", //A Weapon From a More Civilized Time
 
 
 
@@ -4687,10 +4721,12 @@ const fixedImages = {
 "302_12ai":"https://i.imgur.com/geP8b55.png", //Howlader Taldrya
 "302_25ai":"https://i.imgur.com/3BD62vH.png", //Dacien Victae, Deputy Grand Master
 "302_29ai":"https://i.imgur.com/olRnWpk.png", //Lord Idris Adenn, Voice
+"303_15ai":"https://i.imgur.com/q5AwOxA.png", //Shadow Academy: Dueling Platform
 "303_27ai":"https://i.imgur.com/B1pYIkt.png", //Kai Lap'lamiz With Lightsaber
 "304_13ai":"https://i.imgur.com/KtBWlJ1.png", //Sykes Jade
 "304_28ai":"https://i.imgur.com/t91DYBW.png", //Master Kamjin 'Maverick' Lap'lamiz
 "304_33ai":"https://i.imgur.com/UJk50gN.png", //Pete From Sales
+"304_34ai":"https://i.imgur.com/1EXFkwn.png", //Kamjin Lap'lamiz, Sith Battlemaster
 "304_71ai":"https://i.imgur.com/wR5fhzv.png", //Where is Jenni III
 "305_5ai":"https://i.imgur.com/EqQnjbO.png", //Sunrider
 "305_19ai":"https://i.imgur.com/r5oXkaz.png", //Declan Roark With Blaster Rifle
@@ -4698,8 +4734,10 @@ const fixedImages = {
 "305_22ai":"https://i.imgur.com/jZIIzNb.png", //Darth Sarin, Grand Master
 "305_24ai":"https://i.imgur.com/9cM8NTI.png", //Declan Roark's Blaster Rifle
 "305_66ai":"https://i.imgur.com/4t5YQ79.jpg", //Ken Iode, Sapphire Leader
-"305_103ai":"https://i.imgur.com/MiiJLpR.png", //Selika Roh di Plagia, Dread Lord
+"305_103ai":"https://i.imgur.com/HQkfmAf.png", //Selika Roh di Plagia, Dread Lord
 "305_104ai":"https://i.imgur.com/gHtvBwO.png", //Selika Roh di Plagia's Lightsaber
+"305_130ai":"https://i.imgur.com/5npjrLl.png", //I Have Neglected Your Training
+"305_130ai_BACK":"https://i.imgur.com/k5LTXnE.png", //Your Training Is Now Complete
 
 
 };

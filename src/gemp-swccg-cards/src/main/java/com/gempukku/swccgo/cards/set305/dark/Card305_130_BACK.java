@@ -1,4 +1,4 @@
-package com.gempukku.swccgo.cards.set303.dark;
+package com.gempukku.swccgo.cards.set305.dark;
 
 import com.gempukku.swccgo.cards.AbstractObjective;
 import com.gempukku.swccgo.cards.GameConditions;
@@ -45,15 +45,15 @@ import java.util.List;
 
 
 /**
- * Set: Shadow Academy
+ * Set: A Better Tomorrow
  * Type: Objective
- * Title: Peace Is A Lie, There Is Only Passion / The Force Shall Free Me
+ * Title: I Have Neglected Your Training / Your Training Is Now Complete
  */
-public class Card303_007_BACK extends AbstractObjective {
-    public Card303_007_BACK() {
-        super(Side.DARK, 7, "The Force Shall Free Me", ExpansionSet.ABT, Rarity.R);
-        setGameText("Immediately retrieve 10 Force and place destiny card from Sith Test #5 on that Sith Test. While this side up, during your move phase, may use 3 Force to take Apprentice into hand from a location you control (cards on Apprentice go to owner's Used Pile). Apprentice's Sith Test are suspended (not lost) whenever Apprentice not on table. Apprentice may ignore location deployment restrictions. Opponent may not play Sense or Alter. Place out of play if you Force drain at Shadow Academy location or if Apprentice is placed out of play. Cancel Apprentice's Sith Tests.");
-        addIcons(Icon.SA);
+public class Card305_130_BACK extends AbstractObjective {
+    public Card305_130_BACK() {
+        super(Side.DARK, 7, Title.Your_Training_Is_Now_Complete, ExpansionSet.ABT, Rarity.R);
+        setGameText("Immediately retrieve 10 Force and place destiny card from Sith Test #5 on that Sith Test. While this side up, during your move phase, may use 3 Force to take Komilia into hand from a location you control (cards on Komilia go to owner's Used Pile). Komilia's Sith Test are suspended (not lost) whenever Komilia not on table. Komilia may ignore location deployment restrictions. Opponent may not play Sense or Alter. Place out of play if you Force drain at Shadow Academy location or if Komilia is placed out of play. Cancel Komilia's Sith Tests.");
+        addIcons(Icon.ABT);
     }
 
     @Override
@@ -76,9 +76,10 @@ public class Card303_007_BACK extends AbstractObjective {
         }
 
         // Check condition(s)
+        final Filter komiliaOrRohan = GameConditions.hasGameTextModification(game, self, ModifyGameTextType.I_HAVE_NEGLECTED_YOUR_TRAINING_YOUR_TRAINING_IS_NOW_COMPLETE__TARGETS_ROHAN_INSTEAD_OF_KOMILIA) ? Filters.Rohan : Filters.Komilia;
         if (TriggerConditions.forceDrainInitiatedBy(game, effectResult, playerId, Filters.Shadow_Academy_location)
-                || TriggerConditions.justPlacedOutOfPlayFromTable(game, effectResult, Filters.apprentice)) {
-            Collection<PhysicalCard> jediTests = Filters.filterAllOnTable(game, Filters.jediTestTargetingApprentice(Filters.apprentice));
+                || TriggerConditions.justPlacedOutOfPlayFromTable(game, effectResult, komiliaOrRohan)) {
+            Collection<PhysicalCard> jediTests = Filters.filterAllOnTable(game, Filters.jediTestTargetingApprentice(komiliaOrRohan));
 
             final RequiredGameTextTriggerAction action = new RequiredGameTextTriggerAction(self, gameTextSourceCardId);
             action.setText("Place out of play");
@@ -96,25 +97,27 @@ public class Card303_007_BACK extends AbstractObjective {
 
     @Override
     protected List<TopLevelGameTextAction> getGameTextTopLevelActions(final String playerId, SwccgGame game, final PhysicalCard self, int gameTextSourceCardId) {
-        final Filter filter = Filters.and(Filters.apprentice, Filters.at(Filters.controls(playerId)));
+        boolean targetsRohanInsteadOfKomilia = GameConditions.hasGameTextModification(game, self, ModifyGameTextType.I_HAVE_NEGLECTED_YOUR_TRAINING_YOUR_TRAINING_IS_NOW_COMPLETE__TARGETS_ROHAN_INSTEAD_OF_KOMILIA);
+        final Filter filter = Filters.and(targetsRohanInsteadOfKomilia ? Filters.Rohan : Filters.Komilia, Filters.at(Filters.controls(playerId)));
 
         GameTextActionId gameTextActionId = GameTextActionId.OTHER_CARD_ACTION_2;
 
         // Check condition(s)
         if ((GameConditions.isOnceDuringYourPhase(game, self, playerId, gameTextSourceCardId, Phase.MOVE)
                 || (GameConditions.isOnceDuringYourPhase(game, self, playerId, gameTextSourceCardId, Phase.DEPLOY)
-                && GameConditions.hasGameTextModification(game, self, ModifyGameTextType.THE_FORCE_SHALL_FREE_ME__MOVE_PHASE_MAY_BE_TREATED_AS_DEPLOY_PHASE)))
+                    && GameConditions.hasGameTextModification(game, self, ModifyGameTextType.YOUR_TRAINING_IS_NOW_COMPLETE__MOVE_PHASE_MAY_BE_TREATED_AS_DEPLOY_PHASE)))
                 && GameConditions.canUseForce(game, playerId, 3)
                 && GameConditions.canTarget(game, self, filter)) {
+            String komiliaOrRohanText = targetsRohanInsteadOfKomilia ? "Rohan" : "Komilia";
 
             final TopLevelGameTextAction action = new TopLevelGameTextAction(self, gameTextSourceCardId, gameTextActionId);
-            action.setText("Take Apprentice into hand");
+            action.setText("Take " + komiliaOrRohanText + " into hand");
             // Update usage limit(s)
             action.appendUsage(
                     new OncePerPhaseEffect(action));
             // Choose target(s)
             action.appendTargeting(
-                    new TargetCardOnTableEffect(action, playerId, "Choose Apprentice to take into hand", filter) {
+                    new TargetCardOnTableEffect(action, playerId, "Choose " + komiliaOrRohanText + " to take into hand", filter) {
                         @Override
                         protected void cardTargeted(int targetGroupId, final PhysicalCard targetedCard) {
                             action.addAnimationGroup(targetedCard);
@@ -148,8 +151,10 @@ public class Card303_007_BACK extends AbstractObjective {
 
         List<Modifier> modifiers = new LinkedList<Modifier>();
         modifiers.add(new ModifyGameTextModifier(self, Filters.SITH_TEST_5, ModifyGameTextType.IT_IS_THE_FUTURE_YOU_SEE__STACK_DESTINY_CARD_ON_JEDI_TEST_5));
-        modifiers.add(new JediTestSuspendedInsteadOfLostModifier(self, Filters.jediTestTargetingApprentice(Filters.apprentice), new NotCondition(targetsRohanInsteadOfKomilia)));
-        modifiers.add(new IgnoresLocationDeploymentRestrictionsWhenDeployingToLocationModifier(self, Filters.apprentice, new NotCondition(targetsRohanInsteadOfKomilia), Filters.any, true));
+        modifiers.add(new JediTestSuspendedInsteadOfLostModifier(self, Filters.jediTestTargetingApprentice(Filters.Komilia), new NotCondition(targetsRohanInsteadOfKomilia)));
+        modifiers.add(new JediTestSuspendedInsteadOfLostModifier(self, Filters.jediTestTargetingApprentice(Filters.Rohan), targetsRohanInsteadOfKomilia));
+        modifiers.add(new IgnoresLocationDeploymentRestrictionsWhenDeployingToLocationModifier(self, Filters.Komilia, new NotCondition(targetsRohanInsteadOfKomilia), Filters.any, true));
+        modifiers.add(new IgnoresLocationDeploymentRestrictionsWhenDeployingToLocationModifier(self, Filters.Rohan, targetsRohanInsteadOfKomilia, Filters.any, true));
         modifiers.add(new MayNotPlayModifier(self, Filters.or(Filters.Sense, Filters.Alter), opponent));
         return modifiers;
     }

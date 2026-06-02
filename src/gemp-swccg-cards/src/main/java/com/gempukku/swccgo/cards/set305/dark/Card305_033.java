@@ -40,7 +40,7 @@ import java.util.List;
 public class Card305_033 extends AbstractAlien {
     public Card305_033() {
         super(Side.DARK, 1, 3, 3, 4, 6, "Duke Airron Uleich", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.R);
-        setLore("An exiled aristocrat and leader from Kiast, Duke Airron Uleich ordered the Vauzem occupation of Quermia. With support from an unknown benefactor he has disrupted trade in the Nilgaard Sector.");
+        setLore("An exiled aristocrat and leader from Kiast, He ordered the Vauzem Dominion's occupation of Quermia. With  support from an unknown benefactor he has disrupted trade in the Nilgaard Sector.");
         setGameText("Your [Presence] droids and NR-N99s are destiny +1 if drawn for battle or weapon destiny. Once per turn, may take Get Them Out Of My Sight into hand from Reserve Deck; reshuffle. Immune to attrition < X, where X = twice the number of [Presence] droids present.");
         addPersona(Persona.AIRRON);
         addIcons(Icon.ABT);

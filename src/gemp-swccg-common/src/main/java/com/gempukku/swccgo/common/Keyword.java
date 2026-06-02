@@ -227,7 +227,9 @@ public enum Keyword implements Filterable {
     COU_SUMMIT_GUARD("Odan-Urr Summit Guard",true, true),
     SAPPHIRE_SQUADRON("Sapphire Squadron", true),
     NIHILGENIA("Nihilgenia", true, true),
-    CONCUSSION_MISSILES("Concussion Missiles", false);
+    CONCUSSION_MISSILES("Concussion Missiles", false),
+    SWORD("Sword",true),
+    NIGHTSISTER("Nightsister",true, true);
 
 
 

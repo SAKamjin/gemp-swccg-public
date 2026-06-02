@@ -17,7 +17,7 @@ import com.gempukku.swccgo.logic.effects.AddUntilEndOfTurnModifierEffect;
 import com.gempukku.swccgo.logic.effects.DrawDestinyAndChooseInsteadEffect;
 import com.gempukku.swccgo.logic.effects.RespondablePlayCardEffect;
 import com.gempukku.swccgo.logic.effects.choose.TakeCardIntoHandFromReserveDeckEffect;
-import com.gempukku.swccgo.logic.modifiers.AttemptToBlowAwayBlockadeFlagshipTotalModifier;
+import com.gempukku.swccgo.logic.modifiers.AttemptToBlowAwayEchoofVauzemTotalModifier;
 import com.gempukku.swccgo.logic.timing.Action;
 import com.gempukku.swccgo.logic.timing.EffectResult;
 
@@ -81,7 +81,7 @@ public class Card305_089 extends AbstractUsedInterrupt {
                             // Perform result(s)
                             action.appendEffect(
                                     new AddUntilEndOfTurnModifierEffect(action,
-                                            new AttemptToBlowAwayBlockadeFlagshipTotalModifier(self, 2),
+                                            new AttemptToBlowAwayEchoofVauzemTotalModifier(self, 2),
                                             "Adds 2 to attempts to 'blow away' Echo of Vauzem"));
                         }
                     }

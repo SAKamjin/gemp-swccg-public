@@ -237,6 +237,10 @@ public enum Persona implements Filterable {
     MORVAYNE("Morvayne Korr"),
     SELIKA("Selika Roh di Plagia"),
     LORN("Lorn Aledes"),
+    HEADMASTER("Headmaster"),
+    INSTRUCTOR("Shadow Academy Instructor"),
+    IPHIS("Iphis Melinoe"),
+    VEZ("Vez Hirundo"),
 
 
     // Starships
@@ -311,7 +315,6 @@ public enum Persona implements Filterable {
 	ZUCKUSS_SNARE_RIFLE("Zuckuss' Snare Rifle"),
 	KAMJINS_LIGHTSABER("Kamjin's Lightsaber"),
 	KAIS_LIGHTSABER("Kai's Lightsaber"),
-	ROHANS_LIGHTSABER("Rohan's Lightsaber"),
 	POGOS_BLASTER_RIFLE("Pogo's Blaster Rifle"),
 	LAPLAMIZ_LIGHTSABER("Lap'lamiz's Lightsaber"),
     SQYGORNS_BLASTER("Sqygorn Dar's Blaster"),
@@ -327,6 +330,9 @@ public enum Persona implements Filterable {
     MIHOSHIS_KUROTSUBAKI("Kurotsubaki"),
     JON_SILVON_BESKAR_SPEAR("Rising Sun"),
     SELIKAS_LIGHTSABER("Selika Roh di Plagia's Lightsaber"),
+    IPHIS_SWORD("Iphis Melinoe's Mortuary Sword"),
+    ROHANS_LIGHTSABER("Rohan Lap'lamiz's Lightsaber"),
+    KOMILIAS_LIGHTSABER("Komilia Lap'lamiz's Lightsaber"),
 
 
     ;

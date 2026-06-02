@@ -41,7 +41,7 @@ public class Card304_021 extends AbstractDarkJediMaster {
     public Card304_021() {
         super(Side.DARK, 6, 7, 3, 7, 8, "Darth Renatus, Deputy Grandmaster", Uniqueness.UNIQUE, ExpansionSet.GREAT_HUTT_EXPANSION, Rarity.V);
         setLore("Following Dacien's ascendent to the Iron Throne, Atra took on the role of Deputy Grandmaster. In his new leader role he is focused on ensuring the Brotherhood is protected from all threats. ");
-        setGameText("May use two weapons. Force Drains by Atra at an Arx locations are +1 for each Councilor present at same site, including captives. While armed with a weapon at a site, Force drain +1 here.");
+        setGameText("May use two weapons. Force Drains by Atra at an Arx locations are +1 for each Councilor present at same site, including captives");
 		addIcon(Icon.WARRIOR, 2);
         addKeywords(Keyword.LEADER, Keyword.DARK_COUNCILOR, Keyword.MALE);
 		addPersona(Persona.ATRA);

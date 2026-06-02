@@ -36,7 +36,8 @@ public class Card303_011 extends AbstractAlien {
         super(Side.DARK, 1, 5, 3, 6, 6, Title.Instructor_Aleema, Uniqueness.UNIQUE, ExpansionSet.SA, Rarity.C);
         setLore("Currently serving as the Headmistress and Leader of the Shadow Academy. Her leadership has shaped a new generation of  Brotherhood members. Probably harmless.");
         setGameText("Deploys only to Shadow Academy location, but may move elsewhere. When the Master, adds 1 to training destiny.");
-		addIcons(Icon.WARRIOR);
+		addPersona(Persona.INSTRUCTOR);
+        addIcons(Icon.WARRIOR);
         addKeywords(Keyword.INSTRUCTOR);
     }
 

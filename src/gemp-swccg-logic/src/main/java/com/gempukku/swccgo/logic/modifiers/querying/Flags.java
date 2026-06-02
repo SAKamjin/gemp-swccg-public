@@ -108,6 +108,28 @@ public interface Flags extends BaseQuery {
 		return false;
 	}
 
+	/**
+	 * Determines if the specified Plagueis Probe Droid is prevented from deploying to or moving to location.
+	 * @param gameState the game state
+	 * @param card the Plagueis Probe Droid
+	 * @param location the location
+	 * @return true if Plagueis Probe Droid cannot deploy or move to location, otherwise false
+	 */
+	default boolean isPlagueisProbeDroidPreventedFromDeployingToOrMovingToLocation(GameState gameState, PhysicalCard card, PhysicalCard location) {
+		// Limit 1 Plagueis Probe Droid per location from A Better Tomorrow Plagueis Probe Droid
+		// AR entry: The "limit 1 per location" text on this droid works as per the operative
+		// rules (see Characteristics - Operatives, Ap. D). A player may not voluntarily deploy
+		// or move a Plagueis Probe Droid to or across a location where another Plagueis Probe Droid is
+		// located. If this should ever happen accidentally, the owner must choose one to be
+		// lost. If they belong to different owners, the droid lost is determined randomly.
+
+		if (Filters.Plagueis_Probe_Droid.accepts(gameState, query(), card)
+				&&Filters.sameLocationAs(null, SpotOverride.INCLUDE_ALL,Filters.Plagueis_Probe_Droid).accepts(gameState, query(), location)) {
+			return !getModifiersAffectingCard(gameState, ModifierType.MAY_NOT_DEPLOY_MOVE_PLAGUEIS_PROBE_DROID, card).isEmpty();
+		}
+		return false;
+	}
+
 
 
 	/**

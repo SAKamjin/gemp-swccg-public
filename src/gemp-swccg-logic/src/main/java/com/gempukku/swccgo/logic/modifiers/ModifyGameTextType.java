@@ -107,6 +107,9 @@ public enum ModifyGameTextType {
     HOSTILE_TAKEOVER__TARGETS_HIKARU_INSTEAD_OF_LOCITA("Targets Hikaru instead of Locita"),
     HOSTILE_TAKEOVER__TARGETS_KAI_INSTEAD_OF_LOCITA("Targets Kai instead of Locita"),
     HOSTILE_TAKEOVER__TARGETS_KOMILIA_INSTEAD_OF_LOCITA("Targets Komilia instead of Locita"),
+    I_HAVE_NEGLECTED_YOUR_TRAINING_YOUR_TRAINING_IS_NOW_COMPLETE__TARGETS_ROHAN_INSTEAD_OF_KOMILIA("Target Rohan instead of Komilia"),
+    YOUR_TRAINING_IS_NOW_COMPLETE__MOVE_PHASE_MAY_BE_TREATED_AS_DEPLOY_PHASE("'Move phase' may be treated as 'deploy phase'"),
+    THE_FORCE_SHALL_FREE_ME__MOVE_PHASE_MAY_BE_TREATED_AS_DEPLOY_PHASE("'Move phase' may be treated as 'deploy phase'"),
 
 
     //Legacy

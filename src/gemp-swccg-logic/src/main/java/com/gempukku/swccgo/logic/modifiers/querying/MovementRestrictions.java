@@ -148,6 +148,12 @@ public interface MovementRestrictions extends BaseQuery, Locations {
 				return true;
 			}
 
+			// Check if card has (limit 1 per location)
+			if (isOperativePreventedFromDeployingToOrMovingToLocation(gameState, card, curToSite)
+					||isPlagueisProbeDroidPreventedFromDeployingToOrMovingToLocation(gameState, card, curToSite)) {
+				return true;
+			}
+
 			if (asReact) {
 				// Check if player may not 'react' to the location
 				for (Modifier modifier : getModifiersAffectingCard(gameState, ModifierType.MAY_NOT_REACT_TO_LOCATION, curToSite)) {
@@ -233,6 +239,12 @@ public interface MovementRestrictions extends BaseQuery, Locations {
 				return true;
 			}
 
+			// Check if card has (limit 1 per location)
+			if (isOperativePreventedFromDeployingToOrMovingToLocation(gameState, card, toLocation)
+					||isPlagueisProbeDroidPreventedFromDeployingToOrMovingToLocation(gameState, card, toLocation)) {
+				return true;
+			}
+
 			if (asReact) {
 				// Check if player may not 'react' to the location
 				for (Modifier modifier : getModifiersAffectingCard(gameState, ModifierType.MAY_NOT_REACT_TO_LOCATION, toLocation)) {
@@ -288,6 +300,12 @@ public interface MovementRestrictions extends BaseQuery, Locations {
 			// Check if card has (limit 1 per location)
 			if (isOperativePreventedFromDeployingToOrMovingToLocation(gameState, card, toLocation)
 					||isSithProbeDroidPreventedFromDeployingToOrMovingToLocation(gameState, card, toLocation)) {
+				return true;
+			}
+
+			// Check if card has (limit 1 per location)
+			if (isOperativePreventedFromDeployingToOrMovingToLocation(gameState, card, toLocation)
+					||isPlagueisProbeDroidPreventedFromDeployingToOrMovingToLocation(gameState, card, toLocation)) {
 				return true;
 			}
 		}
@@ -374,6 +392,12 @@ public interface MovementRestrictions extends BaseQuery, Locations {
 			// Check if card has (limit 1 per location)
 			if (isOperativePreventedFromDeployingToOrMovingToLocation(gameState, card, curToLocation)
 					||isSithProbeDroidPreventedFromDeployingToOrMovingToLocation(gameState, card, toLocation)) {
+				return true;
+			}
+
+			// Check if card has (limit 1 per location)
+			if (isOperativePreventedFromDeployingToOrMovingToLocation(gameState, card, curToLocation)
+					||isPlagueisProbeDroidPreventedFromDeployingToOrMovingToLocation(gameState, card, toLocation)) {
 				return true;
 			}
 

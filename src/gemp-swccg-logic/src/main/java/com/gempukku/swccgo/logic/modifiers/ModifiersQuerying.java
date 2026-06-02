@@ -4502,6 +4502,15 @@ public interface ModifiersQuerying {
     boolean isSithProbeDroidPreventedFromDeployingToOrMovingToLocation(GameState gameState, PhysicalCard card, PhysicalCard location);
 
     /**
+     * Determines if the specified Plagueis Probe Droid is prevented from deploying to or moving to location.
+     * @param gameState the game state
+     * @param card the Plagueis Probe Droid
+     * @param location the location
+     * @return true if Plagueis Probe Droid cannot deploy or move to location, otherwise false
+     */
+    boolean isPlagueisProbeDroidPreventedFromDeployingToOrMovingToLocation(GameState gameState, PhysicalCard card, PhysicalCard location);
+
+    /**
      * Determines if cards are explicitly not allowed to be 'revived'.
      *
      * @param gameState the game state

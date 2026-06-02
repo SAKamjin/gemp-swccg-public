@@ -19797,6 +19797,25 @@ public class Filters {
     public static final Filter MORVAYNE = Filters.persona(Persona.MORVAYNE);
     public static final Filter Selika = Filters.persona(Persona.SELIKA);
     public static final Filter Restart_The_Droid_Factory = Filters.title(Title.Restart_The_Droid_Factory);
+    public static final Filter Quermia_Forest = Filters.title(Title.Quermia_Forest);
+    public static final Filter Plagueis_Probe_Droid = Filters.title(Title.Plagueis_Probe_Droid);
+    public static final Filter She_Will_Bring_Him_To_Me = Filters.title(Title.She_Will_Bring_Him_To_Me);
+    public static final Filter I_Know_Hes_Here = Filters.title(Title.I_Know_Hes_Here);
+    public static final Filter non_Quermia_location = Filters.and(CardCategory.LOCATION, Filters.not(Filters.partOfSystem(Title.Quermia)));
+    public static final Filter The_Plagueis_Menace = Filters.title(Title.The_Plagueis_Menace);
+    public static final Filter forest_site = Filters.and(Keyword.FOREST, CardSubtype.SITE);
+    public static final Filter SA_Instructor = Filters.or(Persona.HEADMASTER, Persona.INSTRUCTOR);
+    public static final Filter Son_Of_Laplamiz = Filters.title(Title.Son_Of_Laplamiz);
+    public static final Filter The_Force_Shall_Free_Me = Filters.titleContains("The Force Shall Free Me");
+    public static final Filter Impatient_Apprentice = Filters.title(Title.Impatient_Apprentice);
+    public static final Filter I_Have_Neglected_Your_Training = Filters.title(Title.I_Have_Neglected_Your_Training);
+    public static final Filter Your_Training_Is_Now_Complete = Filters.title(Title.Your_Training_Is_Now_Complete);
+    public static final Filter Iphis = Filters.persona(Persona.IPHIS);
+    public static final Filter sword = Filters.keyword(Keyword.SWORD);
+    public static final Filter Nightsister = Filters.keyword(Keyword.NIGHTSISTER);
+    public static final Filter Dathomirian = Filters.species(Species.DATHOMIRIAN);
+    public static final Filter Light_Side = Filters.side(Side.LIGHT);
+    public static final Filter Laplamiz_Children_Dark = Filters.or(Persona.ROHAN, Persona.KOMILIA, Persona.HIKARU);
 
 
     private static class SpotFilterCardInPlayVisitor implements PhysicalCardVisitor {

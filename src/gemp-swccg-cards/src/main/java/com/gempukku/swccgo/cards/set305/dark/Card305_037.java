@@ -40,7 +40,7 @@ import java.util.List;
 public class Card305_037 extends AbstractCombatVehicle {
     public Card305_037() {
         super(Side.DARK, 3, 4, 6, 5, null, 2, 7, "NR-N99 Assault Leader", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.R);
-        setLore("NR-N99 HTD-530 was a veteran of the Clone Wars. Following the war it was smuggled to a variety of different private armies to continue fighting.");
+        setLore("HTD-530 was a veteran of the Clone Wars. Following the war it was smuggled to a variety of different private armies to continue fighting. Currently working for the Vauzem Dominion.");
         setGameText("May carry 4 battle droids. While piloted at same site as another NR-N99, adds two battle destiny. May deploy AAT Laser Cannon aboard from Reserve Deck; reshuffle. Immune to attrition < 5.");
         addModelType(ModelType.NRN99);
         addIcons(Icon.ABT, Icon.PILOT, Icon.PRESENCE);

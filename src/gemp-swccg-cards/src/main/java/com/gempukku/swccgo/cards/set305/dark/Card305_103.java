@@ -4,13 +4,7 @@ import com.gempukku.swccgo.cards.AbstractDarkJediMasterSith;
 import com.gempukku.swccgo.cards.conditions.ArmedWithCondition;
 import com.gempukku.swccgo.cards.conditions.WithCondition;
 import com.gempukku.swccgo.cards.evaluators.ConditionEvaluator;
-import com.gempukku.swccgo.common.ExpansionSet;
-import com.gempukku.swccgo.common.Icon;
-import com.gempukku.swccgo.common.Persona;
-import com.gempukku.swccgo.common.Rarity;
-import com.gempukku.swccgo.common.Side;
-import com.gempukku.swccgo.common.Title;
-import com.gempukku.swccgo.common.Uniqueness;
+import com.gempukku.swccgo.common.*;
 import com.gempukku.swccgo.filters.Filters;
 import com.gempukku.swccgo.game.PhysicalCard;
 import com.gempukku.swccgo.game.SwccgGame;
@@ -33,11 +27,12 @@ import java.util.List;
  */
 public class Card305_103 extends AbstractDarkJediMasterSith {
     public Card305_103() {
-        super(Side.DARK, 6, 8, 7, 6, 8, "Selika Roh di Plagia, Dread Lord", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.UR);
-        setLore("Selika has long pursued a personal goal with Turel; turning the Jedi to the Dark Side. She feels that Turel would make a formidable Sith but, if he won't be turned, he will be destroyed.");
+        super(Side.DARK, 6, 8, 7, 7, 8, "Selika Roh di Plagia, Dread Lord", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.UR);
+        setLore("Selika is using the Vauzem Dominion to complete her personal goal with Turel; turning the Jedi to the Dark Side. She feels that Turel would make a formidable Sith but, if he won't be turned, he will be destroyed. ");
         setGameText("Deploys -2 to Quermia. While with Turel, your battle destinies here are each +1. When Selika wins a lightsaber combat, adds 2 to opponent's Force loss. Immune to Disarmed, Clash Of Sabers, and attrition < 5 (or < 6 if armed with a lightsaber).");
         addPersona(Persona.SELIKA);
         addIcons(Icon.PLAG, Icon.PILOT, Icon.WARRIOR);
+        addKeyword(Keyword.FEMALE);
     }
 
     @Override

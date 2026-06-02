@@ -1040,6 +1040,13 @@ public interface Deploy extends BaseQuery, Attributes, CardTraits, Destiny, Loca
 			return true;
 		}
 
+		// Check if card has (limit 1 per location)
+		if (location != null
+				&& (isOperativePreventedFromDeployingToOrMovingToLocation(gameState, playedCard, location)
+				|| isPlagueisProbeDroidPreventedFromDeployingToOrMovingToLocation(gameState, playedCard, location))) {
+			return true;
+		}
+
 
 		// Check if card has may not deploy restriction that is only ignored at certain locations and check if the restrictions should be ignored at this location
 		if (location != null
