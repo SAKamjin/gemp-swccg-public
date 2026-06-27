@@ -18,7 +18,7 @@ import com.gempukku.swccgo.game.SwccgGame;
 import com.gempukku.swccgo.logic.modifiers.Modifier;
 import com.gempukku.swccgo.logic.modifiers.PowerModifier;
 import com.gempukku.swccgo.logic.modifiers.MayNotBeAttackedByModifier;
-
+import com.gempukku.swccgo.logic.modifiers.TotalPowerModifier;
 
 
 import java.util.Collections;
@@ -42,7 +42,7 @@ public class Card302_041 extends AbstractAlien {
     @Override
     protected List<Modifier> getGameTextWhileActiveInPlayModifiers(SwccgGame game, final PhysicalCard self) {
         List<Modifier> modifiers = new LinkedList<Modifier>();
-		modifiers.add(new PowerModifier(self, new HereEvaluator(self, Filters.and(Filters.other(self), Filters.or(Filters.CHILDREN_OF_MORTIS, Filters.CRYSTAL_CREATURE)))));
+        modifiers.add(new TotalPowerModifier(self, Filters.sameSite(self), new HereEvaluator(self, Filters.and(Filters.your(self), Filters.or(Filters.CHILDREN_OF_MORTIS, Filters.CRYSTAL_CREATURE))), self.getOwner()));
 		modifiers.add(new MayNotBeAttackedByModifier(self, Filters.CRYSTAL_CREATURE));
         return modifiers;
 	}

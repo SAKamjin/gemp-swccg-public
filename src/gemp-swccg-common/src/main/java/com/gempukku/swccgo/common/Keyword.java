@@ -229,7 +229,8 @@ public enum Keyword implements Filterable {
     NIHILGENIA("Nihilgenia", true, true),
     CONCUSSION_MISSILES("Concussion Missiles", false),
     SWORD("Sword",true),
-    NIGHTSISTER("Nightsister",true, true);
+    NIGHTSISTER("Nightsister",true, true),
+    DANKTOOINE_LOCATION("Danktooine Location", false);
 
 
 

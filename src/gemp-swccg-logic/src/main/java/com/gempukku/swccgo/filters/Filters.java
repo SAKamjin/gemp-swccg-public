@@ -19816,6 +19816,24 @@ public class Filters {
     public static final Filter Dathomirian = Filters.species(Species.DATHOMIRIAN);
     public static final Filter Light_Side = Filters.side(Side.LIGHT);
     public static final Filter Laplamiz_Children_Dark = Filters.or(Persona.ROHAN, Persona.KOMILIA, Persona.HIKARU);
+    public static final Filter Lyn = Filters.persona(Persona.LYN);
+    public static final Filter Danktooine_Lower_Corridor = Filters.title(Title.Danktooine_Lower_Corridor);
+    public static final Filter Danktooine_site = Filters.and(Keyword.DANKTOOINE_LOCATION, CardSubtype.SITE);
+    public static final Filter Danktooine_location = Filters.keyword(Keyword.DANKTOOINE_LOCATION);
+    public static final Filter Tatorutaimu = Filters.persona(Persona.TATORUTAIMU);
+    public static final Filter Dag = Filters.persona(Persona.DAG);
+    public static final Filter Slyth = Filters.persona(Persona.SLYTH);
+    public static final Filter Hibbity = Filters.persona(Persona.HIBBITY);
+    public static final Filter Fear_Is_The_Path_To_The_Dark_Side = Filters.title(Title.Fear_Is_The_Path_To_The_Dark_Side);
+    public static final Filter Ore_Chute_Airlock = Filters.title(Title.Ore_Chute_Airlock);
+    public static final Filter Sabacc_Cheater = Filters.title(Title.Sabacc_Cheater);
+    public static final Filter Suppressive_Fire = Filters.titleContains("Suppressive Fire");
+    public static final Filter Chaotic_Komilia = Filters.title(Title.Chaotic_Komilia);
+    public static final Filter A_Jedis_Resilience = Filters.titleContains("A Jedi's Resilience");
+    public static final Filter mercenary = Filters.keyword(Keyword.MERCENARY);
+    public static final Filter Morvyn = Filters.persona(Persona.MORYVN);
+    public static final Filter You_Are_Your_Fathers_Child = Filters.title(Title.You_Are_Your_Fathers_Child);
+    public static final Filter You_Cannot_Beat_Me = Filters.title(Title.You_Cannot_Beat_Me);
 
 
     private static class SpotFilterCardInPlayVisitor implements PhysicalCardVisitor {

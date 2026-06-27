@@ -43,7 +43,7 @@ public class Card305_136 extends AbstractRebel {
         super(Side.LIGHT, 3, 4, 2, 4, 5, "Padawan Vez Hirundo", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.U);
         setLore("Information broker, slicer, and Turel Sorenn's Padawan. A prodigy with Jedi Farsight who has server discipline issues. Banned from the Praxeum cafeteria.");
         setGameText("Adds 2 to anything she pilots. Once during your turn, if at a battleground, may peek at top card of opponent's Reserve Deck. If it is a character, may reveal it and opponent loses 1 Force (if it is a Dark Jedi, may also place it on Used Pile).");
-        addIcons(Icon.ABT, Icon.PILOT, Icon.WARRIOR);
+        addIcons(Icon.ABT, Icon.COU, Icon.PILOT, Icon.WARRIOR);
         addKeywords(Keyword.INFORMATION_BROKER, Keyword.PADAWAN);
         addPersona(Persona.VEZ);
     }

@@ -3797,52 +3797,52 @@ const fixedImages = {
 "302_15":"https://i.imgur.com/3Ln6rCj.png", //Former New Republic Pilot
 "302_16":"https://i.imgur.com/MIXYmyG.png", //Arx: Eos City
 "302_17":"https://i.imgur.com/n7ZoDxW.png", //Training Failure
-"302_18":"https://i.imgur.com/xfjmU8C.png", //Arx: The Iron Garage
-"302_19":"https://i.imgur.com/8BXf9pU.png",
+"302_18":"https://i.imgur.com/xfjmU8C.png", //Arx: The Iron Garage (Dark)
+"302_19":"https://i.imgur.com/8BXf9pU.png", //Arx: The Iron Garage (Light)
 "302_20":"https://i.imgur.com/8KxoJG9.png", //Arx: Dark Ascent
 "302_21":"https://i.imgur.com/Q4mcmIM.png", //Darth Nehalem
-"302_22":"https://i.imgur.com/QUW5Zmd.png", 
-"302_23":"https://i.imgur.com/fACCKHR.png", //Arx: The Iron Legion
+"302_22":"https://i.imgur.com/QUW5Zmd.png", //Arx: The Iron Legion (Light)
+"302_23":"https://i.imgur.com/fACCKHR.png", //Arx: The Iron Legion (Dark)
 "302_24":"https://i.imgur.com/GuDiQq3.png", //Zxyl Bes'uliik, Regent
 "302_25":"https://i.imgur.com/515YP6C.png", //Dacien Victae, Deputy Grand Master
 "302_26":"https://i.imgur.com/ZwWCs66.png", //James Lucius Entar
 "302_27":"https://i.imgur.com/yUhcQVa.png", //Dbbot
 "302_28":"https://i.imgur.com/DHW3JSO.png", //Arx: Eos City Space Port 'Docking Bay'
 "302_29":"https://i.imgur.com/v4Ws6ZB.png", //Lord Idris Adenn, Voice
-"302_30":"https://i.imgur.com/7qByZdq.png",
+"302_30":"https://i.imgur.com/7qByZdq.png", //I Will Not Suffer Failure!
 "302_31":"https://i.imgur.com/lGgChYP.png", //Control the Brotherhood
-"302_32":"https://i.imgur.com/oc3yUQX.png",
+"302_32":"https://i.imgur.com/oc3yUQX.png", //Rian Taldrya
 "302_33":"https://i.imgur.com/veQnKis.png", //Darth Renatus, Justicar
-"302_34":"https://i.imgur.com/4Hnbcdd.png",
-"302_35":"https://i.imgur.com/M4MFi8T.png",
-"302_35_BACK":"https://i.imgur.com/wIfByES.png",
-"302_36":"https://i.imgur.com/k2rbevr.png",
-"302_37":"https://i.imgur.com/6KdlbXv.png",
-"302_38":"https://i.imgur.com/QjRM5dU.png",
-"302_39":"https://i.imgur.com/ldgTBva.png",
-"302_40":"https://i.imgur.com/GKxMyof.png",
-"302_41":"https://i.imgur.com/vGth5er.png",
-"302_42":"https://i.imgur.com/sVwFcK5.png",
-"302_43":"https://i.imgur.com/7PDHfeH.png",
-"302_44":"https://i.imgur.com/11PyPyo.png",
-"302_45":"https://i.imgur.com/YDi35oo.png",
-"302_46":"https://i.imgur.com/OzTbeG7.png",
-"302_47":"https://i.imgur.com/cvOnUbT.png",
-"302_48":"https://i.imgur.com/YSp5skl.png",
-"302_49":"https://i.imgur.com/p0o3B2Y.png",
-"302_50":"https://i.imgur.com/wUdapSB.png",
-"302_50_BACK":"https://i.imgur.com/XgD7Gpl.png",
-"302_51":"https://i.imgur.com/z9YkY1Q.png",
+"302_34":"https://i.imgur.com/4Hnbcdd.png", //Arx Blockade
+"302_35":"https://i.imgur.com/M4MFi8T.png", //Lock Down The System
+"302_35_BACK":"https://i.imgur.com/wIfByES.png", //Expansive Control
+"302_36":"https://i.imgur.com/k2rbevr.png", //Proto-Cythraul
+"302_37":"https://i.imgur.com/6KdlbXv.png", //Crystal Raptor
+"302_38":"https://i.imgur.com/QjRM5dU.png", //Crystal Mist
+"302_39":"https://i.imgur.com/ldgTBva.png", //Crystal Infection
+"302_40":"https://i.imgur.com/GKxMyof.png", //Brotherhood Pilot
+"302_41":"https://i.imgur.com/vGth5er.png", //Infected Trooper
+"302_42":"https://i.imgur.com/sVwFcK5.png", //Mob of Crystal Troopers
+"302_43":"https://i.imgur.com/7PDHfeH.png", //rose Telsniw, Seer
+"302_44":"https://i.imgur.com/11PyPyo.png", //Dandoran (Light)
+"302_45":"https://i.imgur.com/YDi35oo.png", //Dandoran: Nevo Race Track (Light)
+"302_46":"https://i.imgur.com/OzTbeG7.png", //Dandoran: Nevo Podracer Bay (Light)
+"302_47":"https://i.imgur.com/cvOnUbT.png", //Dandoran: Garganta Galleria Casino Hotel (Light)
+"302_48":"https://i.imgur.com/YSp5skl.png", //Dandoran: Imperial Outpost (Light)
+"302_49":"https://i.imgur.com/p0o3B2Y.png", //Dandoran: Imperial Outpost (Dark)
+"302_50":"https://i.imgur.com/wUdapSB.png", //A Gathering Storm
+"302_50_BACK":"https://i.imgur.com/XgD7Gpl.png", //Crystal Calamity
+"302_51":"https://i.imgur.com/z9YkY1Q.png", //Dandoran: Docking Bay (Light)
 
 "303_1":"https://i.imgur.com/Z0iQ6oC.png", //Marick Tyris Arconae, Exarch
 "303_2":"https://i.imgur.com/emuM6k9.png", //Arx: The Shadow Academy (Light)
 "303_3":"https://i.imgur.com/yisEyLl.png", //Arx: The Shadow Academy (Dark)
 "303_4":"https://i.imgur.com/p4tgdw4.png", //Shadow Academy: Training Grounds
-"303_5":"https://i.imgur.com/gsgxj6P.png", //Through Passion, I Gain Strength
+"303_5":"https://i.imgur.com/2W9HLdJ.png", //Through Passion, I Gain Strength
 "303_6":"https://i.imgur.com/Gdr98oB.png", //Through Power, I Gain Victory
 "303_7":"https://i.imgur.com/0w3JlrP.png", //Peace Is A Lie, There Is Only Passion
 "303_7_BACK":"https://i.imgur.com/SyvBrS2.png", //The Force Shall Free Me
-"303_8":"https://i.imgur.com/1EqJmTs.png", //Alethia Archenksova, Headmistress
+"303_8":"https://i.imgur.com/jOsIlnU.png", //Alethia Archenksova, Headmistress
 "303_9":"https://i.imgur.com/myo5LbE.png", //Hence Forth You Shall Be Known As...
 "303_10":"https://i.imgur.com/691oGmT.png", //Shadow Academy Holocron
 "303_11":"https://i.imgur.com/ONDgwyA.png", //Instructor Aleema
@@ -3989,8 +3989,8 @@ const fixedImages = {
 "304_119":"https://i.imgur.com/HkHsJrc.jpg", //Standoff
 "304_120":"https://i.imgur.com/OvDuDNC.jpg", //Training Failure & Gambling Addiction
 "304_121":"https://i.imgur.com/GyhyuuV.jpg", //That Got Him! & We've Got This
-"304_122":"https://i.imgur.com/mL966QU.png", //Hostile Takeover
-"304_122_BACK":"https://i.imgur.com/fHtBxhW.png", //Usurped
+"304_122":"https://i.imgur.com/5fl3zMN.png", //Hostile Takeover
+"304_122_BACK":"https://i.imgur.com/UAfxkKb.png", //Usurped
 "304_123":"https://i.imgur.com/lcom6UA.png", //Kamjin's Obsession
 "304_124":"https://i.imgur.com/L6lcgp4.png", //Councilor's Ambition
 "304_125":"https://i.imgur.com/r5ZS1vg.png", //Kamjin's Ambition
@@ -4162,6 +4162,53 @@ const fixedImages = {
 "305_139":"https://i.imgur.com/jFKVnkx.png", //Komilia Lap'lamiz, Sith Acolyte
 "305_140":"https://i.imgur.com/C1lHOAK.png", //Kamjin Lap'lamiz, Sith Master
 "305_141":"https://i.imgur.com/BERCzQX.png", //A Weapon From a More Civilized Time
+"305_142":"https://i.imgur.com/tZ0Kvy4.png", //Danktooine: Guest Quarters (Dark)
+"305_143":"https://i.imgur.com/S1DZlYc.png", //Danktooine: Lower Corridor (Dark)
+"305_144":"https://i.imgur.com/UNxAqst.png", //Danktooine: North Corridor (Dark)
+"305_145":"https://i.imgur.com/JfANTo3.png", //Slyth
+"305_146":"https://i.imgur.com/TV6ulcC.png", //Tatorutaimu
+"305_147":"https://i.imgur.com/I4Yg9hx.png", //Slyth, Enraged
+"305_148":"https://i.imgur.com/RlhJ7OO.png", //Lyn
+"305_149":"https://i.imgur.com/gl9kvyp.png", //Lyn With Blaster Rifle
+"305_150":"https://i.imgur.com/OEGuPyH.png", //Tiny
+"305_151":"https://i.imgur.com/DVOUlPX.png", //Dag Duh Dug
+"305_152":"https://i.imgur.com/PMVhuf7.png", //Dag Duh Dug, Scoundrel
+"305_153":"https://i.imgur.com/rXowVE8.png", //Hibbity Jibbity With Blaster Rifle
+"305_154":"https://i.imgur.com/1DrkPUR.png", //Hibbity Jibbity
+"305_155":"https://i.imgur.com/KfBds6T.png", //Jan Korsik
+"305_156":"https://i.imgur.com/jz4aBgA.png", //Vezzi Zelarin
+"305_157":"https://i.imgur.com/gEGX5aF.png", //Bionic Hand
+"305_158":"https://i.imgur.com/3aeg35E.png", //Rumination
+"305_159":"https://i.imgur.com/gMsXTgO.png", //Unfair Advantage
+"305_160":"https://i.imgur.com/2rcJXAV.png", //Fear Is The Path To The Dark Side
+"305_161":"https://i.imgur.com/UjahNPX.png", //Force Amplification
+"305_162":"https://i.imgur.com/NUB8JNT.png", //New Ways To Motivate Them
+"305_163":"https://i.imgur.com/C72mTGZ.png", //Ore Chute Airlock
+"305_164":"https://i.imgur.com/bOTsD8v.png", //Trandoboo
+"305_165":"https://i.imgur.com/ukVec3n.png", //The Ghrakhowsk
+"305_166":"https://i.imgur.com/m6BmcNr.png", //Sabacc Cheater
+"305_167":"https://i.imgur.com/MXEUMsz.png", //Slyth's Sssacrifice
+"305_168":"https://i.imgur.com/LZl1XII.png", //Imperial Snare
+"305_169":"https://i.imgur.com/rO7gAan.png", //It Is Expected
+"305_170":"https://i.imgur.com/4Lk0bK6.png", //Chaotic Komilia
+"305_171":"https://i.imgur.com/wDFXGcE.png", //Face In The Crowd
+"305_172":"https://i.imgur.com/VZy7Zrh.png", //Down The Ore Chute
+"305_173":"https://i.imgur.com/PPHEGLH.png", //Scaly Hug
+"305_174":"https://i.imgur.com/ovFucwc.png", //Imperial Travel Biscuits
+"305_175":"https://i.imgur.com/YyDLmfJ.png", //Mercenary's Luck
+"305_176":"https://i.imgur.com/saSIK9U.png", //Morvyn's Lightsaber
+"305_177":"https://i.imgur.com/hxdQMOR.png", //Warrior Morvyn, Infiltrator
+"305_178":"https://i.imgur.com/7SEs3Uu.png", //Apprentice's Lightsaber
+"305_179":"https://i.imgur.com/6Bf2Km2.png", //You Cannot Beat Me
+"305_180":"https://i.imgur.com/jTXWKdV.png", //You Are Your Father's Child
+"305_181":"https://i.imgur.com/UbVox46.png", //Jloc'itaome'faottas, Kamjin's Prize
+"305_181_BACK":"https://i.imgur.com/P53LVLP.png", //Jloc'itaome'faottas, Kamjin's Prize (Back)
+"305_182":"https://i.imgur.com/aJFCBdX.png", //Danktooine (Dark)
+"305_183":"https://i.imgur.com/HYiCdVw.png", //Quermian Warrior
+"305_184":"https://i.imgur.com/edInlqe.png", //Quermian Guard
+"305_185":"https://i.imgur.com/HCETLp6.png", //Quermian General
+"305_186":"https://i.imgur.com/9JGnF45.png", //Alethia Archenksova
+"305_187":"https://i.imgur.com/iaHTDPy.png", //Vez Hirundo
 
 
 
@@ -4728,6 +4775,7 @@ const fixedImages = {
 "304_33ai":"https://i.imgur.com/UJk50gN.png", //Pete From Sales
 "304_34ai":"https://i.imgur.com/1EXFkwn.png", //Kamjin Lap'lamiz, Sith Battlemaster
 "304_71ai":"https://i.imgur.com/wR5fhzv.png", //Where is Jenni III
+"304_122ai":"https://i.imgur.com/Adizq2R.png", //Hostile Takeover
 "305_5ai":"https://i.imgur.com/EqQnjbO.png", //Sunrider
 "305_19ai":"https://i.imgur.com/r5oXkaz.png", //Declan Roark With Blaster Rifle
 "305_20ai":"https://i.imgur.com/No4F7Ix.png", //Declan Roark

@@ -15,10 +15,7 @@ import com.gempukku.swccgo.game.PhysicalCard;
 import com.gempukku.swccgo.game.SwccgGame;
 import com.gempukku.swccgo.logic.conditions.Condition;
 import com.gempukku.swccgo.logic.conditions.UnlessCondition;
-import com.gempukku.swccgo.logic.modifiers.ImmuneToAttritionModifier;
-import com.gempukku.swccgo.logic.modifiers.MayDeployToShadowAcademyLocationModifier;
-import com.gempukku.swccgo.logic.modifiers.Modifier;
-import com.gempukku.swccgo.logic.modifiers.TotalTrainingDestinyModifier;
+import com.gempukku.swccgo.logic.modifiers.*;
 import com.gempukku.swccgo.common.Keyword;
 import com.gempukku.swccgo.common.Title;
 
@@ -36,7 +33,7 @@ public class Card303_008 extends AbstractImperial {
     public Card303_008() {
         super(Side.DARK, 1, 5, 3, 4, 6, Title.Alethia_Archenksova_Headmistress, Uniqueness.UNIQUE, ExpansionSet.SA, Rarity.R);
         setLore("Currently serving as the Headmistress and Leader of the Shadow Academy. Her leadership has shaped a new generation of  Brotherhood members. Probably harmless.");
-        setGameText("Deploys only to Shadow Academy location, but may move elsewhere. When the Master, adds 1 to training destiny. Immune to attrition. ");
+        setGameText("Deploys only to Shadow Academy location, but may move elsewhere. When targeted by a Sith test to be the Mentor, ability is +3 and adds 2 to training destiny. Immune to attrition.");
         addPersonas(Persona.ALETHIA, Persona.HEADMASTER);
 		addIcons(Icon.WARRIOR);
         addKeywords(Keyword.LEADER, Keyword.DARK_COUNCILOR, Keyword.HEADMASTER);
@@ -61,6 +58,7 @@ public class Card303_008 extends AbstractImperial {
         List<Modifier> modifiers = new LinkedList<Modifier>();
         modifiers.add(new TotalTrainingDestinyModifier(self, Filters.jediTestTargetingMentor(Filters.sameCardId(self)), 2));
         modifiers.add(new ImmuneToAttritionModifier(self));
+        modifiers.add(new DefinedByGameTextAbilityModifier(self, Filters.and(Filters.sameCardId(self), Filters.mentorTargetedByJediTest(Filters.uncompleted_Jedi_Test)), 7));
         return modifiers;
     }
 }

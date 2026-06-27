@@ -241,6 +241,12 @@ public enum Persona implements Filterable {
     INSTRUCTOR("Shadow Academy Instructor"),
     IPHIS("Iphis Melinoe"),
     VEZ("Vez Hirundo"),
+    LYN("Lyn"),
+    SLYTH("Slyth"),
+    DAG("Dag Duh Dug"),
+    HIBBITY("Hibbity Jibbity"),
+    TINY("Tiny"),
+    MORYVN("Morvyn"),
 
 
     // Starships
@@ -287,6 +293,7 @@ public enum Persona implements Filterable {
     SARLAC("S.A.R.L.a.C"),
     SOLARI("Solari"),
     ECHO_OF_VAUZEM("Echo of Vauzem"),
+    TATORUTAIMU("Tatorutaimu"),
 
     // Vehicles
     JABBAS_SAIL_BARGE("Jabba's Sail Barge"),
@@ -333,6 +340,9 @@ public enum Persona implements Filterable {
     IPHIS_SWORD("Iphis Melinoe's Mortuary Sword"),
     ROHANS_LIGHTSABER("Rohan Lap'lamiz's Lightsaber"),
     KOMILIAS_LIGHTSABER("Komilia Lap'lamiz's Lightsaber"),
+    LYNS_BLASTER_RIFLE("Lyn's Blaster Rifle"),
+    HIBBITYS_BLASTER_RFILE("Hibbity Jibbity's Blaster Rifle"),
+    MORVYNS_LIGHTSABER("Morvyn's Lightsaber"),
 
 
     ;

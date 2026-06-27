@@ -378,6 +378,7 @@ public class TriggerConditions {
                 || effectResult.getType() == EffectResult.Type.RESTORED_TO_NORMAL
                 || effectResult.getType() == EffectResult.Type.COLLAPSED_SITE
                 || effectResult.getType() == EffectResult.Type.RELOCATED_TO_WEATHER_VANE
+                || effectResult.getType() == EffectResult.Type.RELOCATED_TO_ORE_CHUTE_AIRLOCK
                 || effectResult.getType() == EffectResult.Type.RELOCATED_FROM_LOST_IN_SPACE_OR_WEATHER_VANE_TO_LOCATION
                 || effectResult.getType() == EffectResult.Type.STOLEN
                 || effectResult.getType() == EffectResult.Type.TRANSFERRED_CAPTIVE_TO_NEW_ESCORT
@@ -5539,6 +5540,21 @@ public class TriggerConditions {
     public static boolean justRelocatedToWeatherVane(SwccgGame game, EffectResult effectResult, Filterable filter) {
         if (effectResult.getType() == EffectResult.Type.RELOCATED_TO_WEATHER_VANE) {
             PhysicalCard card = ((RelocateToWeatherVaneResult) effectResult).getCard();
+            return Filters.and(filter).accepts(game, card);
+        }
+        return false;
+    }
+
+    /**
+     * Determines if a card accepted by the filter was just relocated to Ore Chute Airlock.
+     * @param game the game
+     * @param effectResult the effect result
+     * @param filter the filter
+     * @return true or false
+     */
+    public static boolean justRelocatedToOreChuteAirlock(SwccgGame game, EffectResult effectResult, Filterable filter) {
+        if (effectResult.getType() == EffectResult.Type.RELOCATED_TO_ORE_CHUTE_AIRLOCK) {
+            PhysicalCard card = ((RelocateToOreChuteAirlockResult) effectResult).getCard();
             return Filters.and(filter).accepts(game, card);
         }
         return false;

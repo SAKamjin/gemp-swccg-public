@@ -1482,5 +1482,18 @@ public interface Title {
     String I_Have_Neglected_Your_Training = "I Have Neglected Your Training";
     String Your_Training_Is_Now_Complete = "Your Training Is Now Complete";
     String Impatient_Apprentice = "Impatient Apprentice";
-
+    String Danktooine_Lower_Corridor = "Danktooine: Lower Corridor";
+    String Fear_Is_The_Path_To_The_Dark_Side = "Fear Is The Path To The Dark Side";
+    String Force_Amplification = "Force Amplification";
+    String Ore_Chute_Airlock = "Ore Chute Airlock";
+    String Trandoboo = "Trandoboo";
+    String The_Ghrakhowsk = "The Ghrakhowsk";
+    String Sabacc_Cheater = "Sabacc Cheater";
+    String Imperial_Snare = "Imperial Snare";
+    String Chaotic_Komilia = "Chaotic Komilia";
+    String Face_In_The_Crowd = "Face In The Crowd";
+    String Imperial_Travel_Biscuits = "Imperial Travel Biscuits";
+    String You_Are_Your_Fathers_Child = "You Are Your Father's Child";
+    String You_Cannot_Beat_Me = "You Cannot Beat Me";
+    String Theres_No_Escape = "There's No Escape";
 }

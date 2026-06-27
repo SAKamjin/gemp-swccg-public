@@ -230,6 +230,9 @@ public abstract class EffectResult implements Snapshotable<EffectResult> {
         RELOCATED_TO_WEATHER_VANE,
         RELOCATED_FROM_LOST_IN_SPACE_OR_WEATHER_VANE_TO_LOCATION,
 
+        // Relocated from/to Ore Chute Airlock
+        RELOCATED_TO_ORE_CHUTE_AIRLOCK,
+
         // Weapon firing
         FIRED_WEAPON,
 

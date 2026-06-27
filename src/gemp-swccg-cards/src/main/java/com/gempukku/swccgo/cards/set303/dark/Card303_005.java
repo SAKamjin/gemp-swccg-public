@@ -16,6 +16,9 @@ import com.gempukku.swccgo.filters.Filter;
 import com.gempukku.swccgo.filters.Filters;
 import com.gempukku.swccgo.game.PhysicalCard;
 import com.gempukku.swccgo.game.SwccgGame;
+import com.gempukku.swccgo.logic.actions.TopLevelGameTextAction;
+import com.gempukku.swccgo.logic.effects.LoseCardFromTableEffect;
+import com.gempukku.swccgo.logic.effects.choose.TakeCardIntoHandFromReserveDeckEffect;
 import com.gempukku.swccgo.logic.modifiers.EachTrainingDestinyModifier;
 import com.gempukku.swccgo.logic.modifiers.Modifier;
 
@@ -32,7 +35,7 @@ public class Card303_005 extends AbstractNormalEffect {
     public Card303_005() {
         super(Side.DARK, 4, PlayCardZoneOption.ATTACHED, Title.Through_Passion_I_Gain_Strength, Uniqueness.UNIQUE, ExpansionSet.SA, Rarity.C);
         setLore("'It is our goal to be stronger, to achieve our potential and not rest upon our laurels. We are the seekers, not the shepherds.' - Yuthura Ban");
-        setGameText("Deploy on a character. When on the mentor, adds 1 to training destiny draws. If mentor is a Headmaster/mistress or Instructor, adds 2 to training destiny draws.");
+        setGameText("Deploy on a character. When on the mentor, adds 1 to training destiny draws. If mentor is a Headmaster/mistress or Instructor, adds 2 to training destiny draws and you may lose Effect to search your Reserve Deck and take into hand one interrupt card with 'Force' in the title. Shuffle, cut and replace.");
         addKeywords(Keyword.DEPLOYS_ON_CHARACTERS);
     }
 
@@ -45,8 +48,30 @@ public class Card303_005 extends AbstractNormalEffect {
     protected List<Modifier> getGameTextWhileActiveInPlayModifiers(SwccgGame game, final PhysicalCard self) {
         List<Modifier> modifiers = new LinkedList<Modifier>();
         modifiers.add(new EachTrainingDestinyModifier(self, Filters.jediTestTargetingMentor(Filters.hasAttached(self)), 1));	
-		modifiers.add(new EachTrainingDestinyModifier(self, Filters.jediTestTargetingMentor(Filters.and(Filters.hasAttached(self), Filters.or(Filters.HEADMASTER, Filters.INSTRUCTOR))), 1));		
+		modifiers.add(new EachTrainingDestinyModifier(self, Filters.jediTestTargetingMentor(Filters.and(Filters.hasAttached(self), Filters.or(Filters.HEADMASTER, Filters.INSTRUCTOR))), 2));
         return modifiers;
+    }
+
+    @Override
+    protected List<TopLevelGameTextAction> getGameTextTopLevelActions(final String playerId, SwccgGame game, final PhysicalCard self, int gameTextSourceCardId) {
+        GameTextActionId gameTextActionId = GameTextActionId.THROUGH_PASSION_I_GAIN_STRENGTH__UPLOAD_FORCE_CARD;
+
+        // Check condition(s)
+        if (GameConditions.isAttachedTo(game, self, Filters.or(Filters.HEADMASTER, Filters.INSTRUCTOR))
+                && GameConditions.canTakeCardsIntoHandFromReserveDeck(game, playerId, self, gameTextActionId)) {
+
+            final TopLevelGameTextAction action = new TopLevelGameTextAction(self, gameTextSourceCardId, gameTextActionId);
+            action.setText("Take card into hand from Reserve Deck");
+            action.setActionMsg("Take an interrupt card with 'Force' in title into hand from Reserve Deck");
+            // Pay cost(s)
+            action.appendCost(
+                    new LoseCardFromTableEffect(action, self));
+            // Perform result(s)
+            action.appendEffect(
+                    new TakeCardIntoHandFromReserveDeckEffect(action, playerId, Filters.and(Filters.Interrupt, Filters.titleContains("force")), true));
+            return Collections.singletonList(action);
+        }
+        return null;
     }
 
 }

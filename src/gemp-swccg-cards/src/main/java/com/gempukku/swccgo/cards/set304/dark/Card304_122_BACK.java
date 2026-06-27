@@ -52,7 +52,7 @@ import java.util.List;
 public class Card304_122_BACK extends AbstractObjective {
     public Card304_122_BACK() {
         super(Side.DARK, 7, Title.Usurped, ExpansionSet.GREAT_HUTT_EXPANSION, Rarity.V);
-        setGameText("While this side up, lose 1 Force at end of each of your turns. Once during each of your turns, when Kamjin, Locita (even as a non-frozen captive) and Kamjin are all present at your Throne Room, you may initiate a Locita/Kamjin duel: Each player draws two destiny. Add ability. Highest total wins. If Kamjin wins, opponent loses 3 Force. If Locita wins, shuffle Reserve Deck and draw destiny; if destiny > 12, Locita crosses to Dark Side, totally depleting opponent's Life Force. Flip if Locita neither present with Kamjin nor a captive.");
+        setGameText("While this side up, lose 1 Force at end of each of your turns. Once during each of your turns, when Thran, Locita (even as a non-frozen captive) and Kamjin are all present at your Throne Room, you may initiate a Locita/Kamjin duel: Each player draws two destiny. Add ability. Highest total wins. If Kamjin wins, opponent loses 3 Force. If Locita wins, shuffle Reserve Deck and draw destiny; if destiny > 12, Locita crosses to Dark Side, totally depleting opponent's Life Force. Flip if Locita neither present with Kamjin nor a captive.");
     }
 
     @Override
@@ -151,7 +151,7 @@ public class Card304_122_BACK extends AbstractObjective {
         }
 
         final String opponent = game.getOpponent(playerId);
-        Filter presentAtThroneRoom = Filters.presentAt(Filters.Throne_Room);
+        Filter presentAtThroneRoom = Filters.presentAt(Filters.Monolith_Throne_Room);
 
         gameTextActionId = GameTextActionId.OTHER_CARD_ACTION_2;
 

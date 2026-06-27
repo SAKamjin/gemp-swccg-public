@@ -45,6 +45,7 @@ public class Card304_003 extends AbstractImperial {
         addIcons(Icon.WARRIOR, Icon.CSP);
 		setSpecies(Species.TOGRUTA);
 		addKeywords(Keyword.MALE);
+        addPersona(Persona.MORYVN);
     }
 
     @Override

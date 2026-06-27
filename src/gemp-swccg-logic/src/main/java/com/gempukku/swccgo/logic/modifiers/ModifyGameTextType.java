@@ -110,6 +110,7 @@ public enum ModifyGameTextType {
     I_HAVE_NEGLECTED_YOUR_TRAINING_YOUR_TRAINING_IS_NOW_COMPLETE__TARGETS_ROHAN_INSTEAD_OF_KOMILIA("Target Rohan instead of Komilia"),
     YOUR_TRAINING_IS_NOW_COMPLETE__MOVE_PHASE_MAY_BE_TREATED_AS_DEPLOY_PHASE("'Move phase' may be treated as 'deploy phase'"),
     THE_FORCE_SHALL_FREE_ME__MOVE_PHASE_MAY_BE_TREATED_AS_DEPLOY_PHASE("'Move phase' may be treated as 'deploy phase'"),
+    CHARACTER_ABILITY_GREATER_3__DOES_NOT_ADD_1_TO_BATTLE_DESTINY("Does not add 1 to battle destiny"),
 
 
     //Legacy
