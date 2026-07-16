@@ -1364,8 +1364,12 @@ public class ModifiersLogic implements ModifiersEnvironment, ModifiersState, Mod
         _firedInBattleCompletedMap.clear();
         _firedInBattleByPlayerMap.clear();
         _firedInBattleByPlayerCompletedMap.clear();
+        _firedInBattleByCardMap.clear();
+        _firedInBattleByCardCompletedMap.clear();
         _permWeaponFiredInBattleByPlayerMap.clear();
         _permWeaponFiredInBattleByPlayerCompletedMap.clear();
+        _permWeaponFiredInBattleByCardMap.clear();
+        _permWeaponFiredInBattleByCardCompletedMap.clear();
     }
 
     /**
@@ -1963,6 +1967,14 @@ public class ModifiersLogic implements ModifiersEnvironment, ModifiersState, Mod
         return (starshipCardIds != null && starshipCardIds.contains(starshipCardId));
     }
 
+    /**
+     * Determines if any asteroid destiny has been drawn this turn.
+     * @return true if any asteroid destiny has been drawn this turn
+     */
+    public boolean wasAsteroidDestinyDrawnThisTurn() {
+        return !_asteroidDestinyDrawnAgainstMap.isEmpty();
+    }
+
     public void participatedInForceDrain(PhysicalCard card) {
         final int cardId = card.getCardId();
         final Integer value = _forceDrainParticipationMap.get(cardId);
@@ -2015,21 +2027,21 @@ public class ModifiersLogic implements ModifiersEnvironment, ModifiersState, Mod
     }
 
     /**
-     * Records that the specified card has participated in an attack on a non-creature.
+     * Records that the specified card has participated in an attack on a non-creature during Battle Phase.
      *
      * @param card the card
      */
-    public void participatedInAttackOnNonCreature(PhysicalCard card) {
+    public void participatedInBattlePhaseAttackOnNonCreature(PhysicalCard card) {
         _attackOnNonCreatureParticipationSet.add(card.getCardId());
     }
 
     /**
-     * Determines if the specified card has participated in an attack on a non-creature this turn.
+     * Determines if the specified card has participated in an attack on a non-creature (during Battle Phase) this turn.
      *
      * @param card the card
      * @return true if card has participated, otherwise false
      */
-    public boolean hasParticipatedInAttackOnNonCreatureThisTurn(PhysicalCard card) {
+    public boolean hasParticipatedInBattlePhaseAttackOnNonCreatureThisTurn(PhysicalCard card) {
         return _attackOnNonCreatureParticipationSet.contains(card.getCardId());
     }
 

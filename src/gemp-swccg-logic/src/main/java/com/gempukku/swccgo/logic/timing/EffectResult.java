@@ -373,6 +373,9 @@ public abstract class EffectResult implements Snapshotable<EffectResult> {
         // Dark Hours
         DARK_HOURS_EFFECT,
 
+        // Shielded
+        CARDS_SHIELDED,
+
         // Enslave character
         CHARACTER_ENSLAVED,
 

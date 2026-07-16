@@ -31,6 +31,7 @@ public enum TargetingReason {
     TO_BE_TORTURED("to be tortured"),
     TO_RELOCATE_STARDUST_TO("to relocate Stardust to"),
 	TO_BE_INFECTED("to be infected");
+    TO_BE_TRANSFERRED_TO("to be transferred to"),
 
     private String _humanReadable;
 

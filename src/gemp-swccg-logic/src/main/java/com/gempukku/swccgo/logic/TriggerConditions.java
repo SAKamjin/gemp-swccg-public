@@ -405,7 +405,8 @@ public class TriggerConditions {
                 || effectResult.getType() == EffectResult.Type.PARASITE_DETACHED
                 || effectResult.getType() == EffectResult.Type.RETARGETED_EFFECT
                 || effectResult.getType() == EffectResult.Type.DARK_HOURS_EFFECT
-                || effectResult.getType() == EffectResult.Type.CHARACTER_ENSLAVED);
+                || effectResult.getType() == EffectResult.Type.CHARACTER_ENSLAVED
+                || effectResult.getType() == EffectResult.Type.CARDS_SHIELDED);
 
         // TODO: Just checking EffectResult.getType() would be faster???
 
@@ -4303,6 +4304,25 @@ public class TriggerConditions {
             ParasiteAttachedResult parasiteAttachedResult = (ParasiteAttachedResult) effectResult;
             PhysicalCard parasite = parasiteAttachedResult.getParasite();
             PhysicalCard host = parasiteAttachedResult.getHost();
+            return (parasite != null && Filters.and(parasiteFilter).accepts(game, parasite)
+                    && host != null && Filters.and(hostFilter).accepts(game, host));
+        }
+        return false;
+    }
+
+    /**
+     * Determines if a parasite creature accepted by the parasite filter just detached from a host accepted by the host filter.
+     * @param game the game
+     * @param effectResult the effect result
+     * @param parasiteFilter the parasite filter
+     * @param hostFilter the host filter
+     * @return true or false
+     */
+    public static boolean justDetachedParasiteFromHost(SwccgGame game, EffectResult effectResult, Filterable parasiteFilter, Filterable hostFilter) {
+        if (effectResult.getType() == EffectResult.Type.PARASITE_DETACHED) {
+            ParasiteDetachedResult parasiteDetachedResult = (ParasiteDetachedResult) effectResult;
+            PhysicalCard parasite = parasiteDetachedResult.getParasite();
+            PhysicalCard host = parasiteDetachedResult.getHost();
             return (parasite != null && Filters.and(parasiteFilter).accepts(game, parasite)
                     && host != null && Filters.and(hostFilter).accepts(game, host));
         }

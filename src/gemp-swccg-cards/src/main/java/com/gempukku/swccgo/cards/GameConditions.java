@@ -2979,6 +2979,20 @@ public class GameConditions {
      * @param self the self
      * @param gameTextActionId the identifier for the card's specific action to perform the search
      * @param persona persona that can be chosen to deploy that are identified by persona
+     * @param title card that can be chosen to deploy that are identified by title
+     * @return true or false
+     */
+    public static boolean canDeployCardFromReserveDeck(SwccgGame game, String playerId, PhysicalCard self, GameTextActionId gameTextActionId, Persona persona, String title) {
+        return canDeployCardFromCardPile(game, playerId, self, Zone.RESERVE_DECK, gameTextActionId, false, false, Collections.singleton(persona), Collections.singletonList(title));
+    }
+
+    /**
+     * Checks if the player can deploy a card from Reserve Deck.
+     * @param game the game
+     * @param playerId the player
+     * @param self the self
+     * @param gameTextActionId the identifier for the card's specific action to perform the search
+     * @param persona persona that can be chosen to deploy that are identified by persona
      * @param titles cards that can be chosen to deploy that are identified by title
      * @return true or false
      */
@@ -4620,6 +4634,11 @@ public class GameConditions {
         return game.getGameState().isCardInPlayActive(starship, false, false, false, false, false, false, false, false);
     }
 
+    // Checks if any asteroid destiny was drawn this turn
+    public static boolean wasAsteroidDestinyDrawnThisTurn(SwccgGame game) {
+        return game.getModifiersQuerying().wasAsteroidDestinyDrawnThisTurn();
+    }
+
     /**
      * Determines if characters can be 'revived'.
      *
@@ -4683,7 +4702,7 @@ public class GameConditions {
     }
 
     /**
-     * Determines if the player can performing docking bay transit from the location.
+     * Determines if the player can perform docking bay transit from the location.
      * @param playerId the player
      * @param game the game
      * @param location the filter for card to move
@@ -4705,7 +4724,9 @@ public class GameConditions {
         }
 
         // Get cards at docking bay
-        Filter cardFilter = Filters.and(Filters.your(playerId), Filters.hasNotPerformedRegularMove, Filters.or(Filters.character, Filters.vehicle, Filters.weapon), Filters.atLocation(location));
+        Filter atFilter = Filters.and(Filters.your(playerId), Filters.hasNotPerformedRegularMove, Filters.or(Filters.character, Filters.vehicle, Filters.movesLikeCharacter), Filters.atLocation(location));
+        Filter attachedToFilter = Filters.and(Filters.your(playerId), Filters.hasNotPerformedRegularMove, Filters.artillery_weapon_that_may_use_db_transit, Filters.attachedTo(location)); //deployed on location (attached)
+        Filter cardFilter = Filters.or(atFilter, attachedToFilter);
         if (gameState.getCurrentPlayerId().equals(playerId)) {
             cardFilter = Filters.and(cardFilter, Filters.not(Filters.or(Filters.undercover_spy, Filters.deploysAndMovesLikeUndercoverSpy)));
         }
@@ -4762,6 +4783,21 @@ public class GameConditions {
      * Determines if the player can use location's game text to perform a move.
      * @param playerId the player
      * @param game the game
+     * @param spotOverrides overrides which cards can be seen as "active" for the purposes of the cardToMoveFilter or null
+     * @param cardToMoveFilter the filter for card to move
+     * @param fromCardFilter the filter for card to move from
+     * @param toCardFilter the filter for card to move to
+     * @param forFree true if moving for free, otherwise false
+     * @return true or false
+     */
+    public static boolean canPerformMovementUsingLocationText(String playerId, SwccgGame game, Map<InactiveReason, Boolean> spotOverrides, Filterable cardToMoveFilter, Filterable fromCardFilter, Filterable toCardFilter, boolean forFree) {
+        return canPerformMovementUsingLocationText(playerId, game, spotOverrides, cardToMoveFilter, fromCardFilter, toCardFilter, forFree, 1);
+    }
+
+    /**
+     * Determines if the player can use location's game text to perform a move.
+     * @param playerId the player
+     * @param game the game
      * @param cardToMoveFilter the filter for card to move
      * @param fromCardFilter the filter for card to move from
      * @param toCardFilter the filter for card to move to
@@ -4770,6 +4806,22 @@ public class GameConditions {
      * @return true or false
      */
     public static boolean canPerformMovementUsingLocationText(String playerId, SwccgGame game, Filterable cardToMoveFilter, Filterable fromCardFilter, Filterable toCardFilter, boolean forFree, float baseCost) {
+        return canPerformMovementUsingLocationText(playerId, game, null, cardToMoveFilter, fromCardFilter, toCardFilter, forFree, baseCost);
+    }
+
+    /**
+     * Determines if the player can use location's game text to perform a move.
+     * @param playerId the player
+     * @param game the game
+     * @param spotOverrides overrides which cards can be seen as "active" for the purposes of the cardToMoveFilter or null
+     * @param cardToMoveFilter the filter for card to move
+     * @param fromCardFilter the filter for card to move from
+     * @param toCardFilter the filter for card to move to
+     * @param forFree true if moving for free, otherwise false
+     * @param baseCost base cost in amount of Force required to perform the movement
+     * @return true or false
+     */
+    public static boolean canPerformMovementUsingLocationText(String playerId, SwccgGame game, Map<InactiveReason, Boolean> spotOverrides, Filterable cardToMoveFilter, Filterable fromCardFilter, Filterable toCardFilter, boolean forFree, float baseCost) {
         GameState gameState = game.getGameState();
         ModifiersQuerying modifiersQuerying = game.getModifiersQuerying();
 
@@ -4783,7 +4835,7 @@ public class GameConditions {
 
         // Figure out which from locations (or starships/vehicles) contain any of the cards can move to valid to locations (or starship/vehicles)
         for (PhysicalCard fromCard : fromCards) {
-            final Collection<PhysicalCard> cardsToMove = Filters.filterActive(game, null,
+            final Collection<PhysicalCard> cardsToMove = Filters.filterActive(game, null, spotOverrides,
                     Filters.and(Filters.owner(playerId), cardToMoveFilter, Filters.hasNotPerformedRegularMove, Filters.or(Filters.atLocation(fromCard), Filters.aboardExceptRelatedSites(fromCard))));
 
             for (PhysicalCard cardToMove : cardsToMove) {
