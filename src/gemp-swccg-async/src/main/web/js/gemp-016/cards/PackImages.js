@@ -21,6 +21,7 @@ const packBlueprints = {
 	"Dark Brotherhood Core Set Booster Pack":"https://i.imgur.com/PZTk3vU.png",
 	"Shadow Academy Booster Pack":"https://i.imgur.com/X26m7u8.png",
 	"The Great Hutt Expansion Booster Pack":"https://i.imgur.com/gne77rr.png",
+	"A Better Tomorrow Booster Pack":"https://i.imgur.com/kr6vPkO.png",
 
     "Premiere Booster Box":"https://res.starwarsccg.org/packs/premiere_booster_box.png",
     "A New Hope Booster Box":"https://res.starwarsccg.org/packs/a_new_hope_booster_box.png",
@@ -71,6 +72,10 @@ const packBlueprints = {
     "Virtual Alternate Image Booster Pack Series 6":"https://res.starwarsccg.org/packs/virtualalternateimageboosterpackseries6.png",
     "Virtual Alternate Image Booster Pack Series 7":"https://res.starwarsccg.org/packs/virtualalternateimageboosterpackseries7.png",
     "Virtual Alternate Image Booster Pack Series 8":"https://res.starwarsccg.org/packs/virtualalternateimageboosterpackseries8.png",
+	"DB:CCG Alternate Image Booster Pack Series 1":"https://i.imgur.com/xXltWdQ.png",
+	"DB:CCG Alternate Image Booster Pack Series 2":"https://i.imgur.com/qyUaGE7.png",
+	"DB:CCG Alternate Image Booster Pack Series 3":"https://i.imgur.com/PVN6NB3.png",
+	"DB:CCG Alternate Image Booster Pack Series 4":"https://i.imgur.com/mOgnTDa.png",
 
     "First Anthology Box":"https://res.starwarsccg.org/packs/first_anthology_box.png",
     "Second Anthology Box":"https://res.starwarsccg.org/packs/second_anthology_box.png",

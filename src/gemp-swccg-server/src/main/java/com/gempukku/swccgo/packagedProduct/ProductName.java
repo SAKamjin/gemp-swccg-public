@@ -28,6 +28,7 @@ public interface ProductName {
     String DB_CORE_BOOSTER_PACK = "Dark Brotherhood Core Set Booster Pack";
     String SA_BOOSTER_PACK = "Shadow Academy Booster Pack";
     String GREAT_HUTT_EXPANSION_BOOSTER_PACK = "The Great Hutt Expansion Booster Pack";
+    String A_BETTER_TOMORROW_BOOSTER_PACK = "A Better Tomorrow Booster Pack";
 
     // Booster box
     String PREMIERE_BOOSTER_BOX = "Premiere Booster Box";
@@ -80,6 +81,10 @@ public interface ProductName {
     String VIRTUAL_ALTERNATE_IMAGE_BOOSTER_PACK_SERIES_6 = "Virtual Alternate Image Booster Pack Series 6";
     String VIRTUAL_ALTERNATE_IMAGE_BOOSTER_PACK_SERIES_7 = "Virtual Alternate Image Booster Pack Series 7";
     String VIRTUAL_ALTERNATE_IMAGE_BOOSTER_PACK_SERIES_8 = "Virtual Alternate Image Booster Pack Series 8";
+    String DBCCG_ALTERNATE_IMAGE_BOOSTER_PACK_SERIES_1 = "DB:CCG Alternate Image Booster Pack Series 1";
+    String DBCCG_ALTERNATE_IMAGE_BOOSTER_PACK_SERIES_2 = "DB:CCG Alternate Image Booster Pack Series 2";
+    String DBCCG_ALTERNATE_IMAGE_BOOSTER_PACK_SERIES_3 = "DB:CCG Alternate Image Booster Pack Series 3";
+    String DBCCG_ALTERNATE_IMAGE_BOOSTER_PACK_SERIES_4 = "DB:CCG Alternate Image Booster Pack Series 4";
 
     // Anthology Boxes
     String FIRST_ANTHOLOGY_BOX = "First Anthology Box";

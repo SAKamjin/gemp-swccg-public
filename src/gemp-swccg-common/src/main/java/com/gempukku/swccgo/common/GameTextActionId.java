@@ -746,6 +746,7 @@ public enum GameTextActionId {
     DOWN_THE_ORE_CHUTE__UPLOAD_ORE_CHUTE_AIRLOCK(true),
     WARRIOR_MORVYN_INFILTRATOR__DOWNLOAD_MORVYNS_LIGHTSABER(true),
     YOU_CANNOT_BEAT_ME__UPLOAD_YOU_ARE_YOUR_FATHERS_CHILD(true),
+    ARNID_VUS__SEARCH_LOST_PILE(true),
 
 
     // Per game
@@ -1114,6 +1115,7 @@ public enum GameTextActionId {
     SHE_WILL_BRING_HIM_TO_ME__UPLOAD_I_KNOW_HES_HERE(true, true),
     SON_OF_LAPLAMIZ__DOWNLOAD_LIGHTSABER(true, true),
     IT_IS_EXPECTED__TAKE_FIRST_WEAPONS_SEGMENT_ACTION(false, true),
+    ARNID_VUS__CANCEL_DROID_GAME_TEXT(false, true),
 
     // Per captive
     DUNGEON__RETRIEVE_FORCE(false, false, true, false),

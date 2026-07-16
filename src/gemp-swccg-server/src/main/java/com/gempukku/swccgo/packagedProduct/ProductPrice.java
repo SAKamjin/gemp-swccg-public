@@ -27,6 +27,7 @@ public interface ProductPrice {
     int DB_CORE_BOOSTER_PACK = 300;
     int SA_BOOSTER_PACK = 250;
     int GREAT_HUTT_EXPANSION_BOOSTER_PACK = 300;
+    int A_BETTER_TOMORROW_BOOSTER_PACK = 300;
 
     // Booster box prices
     int PREMIERE_BOOSTER_BOX = 9000;
@@ -59,6 +60,7 @@ public interface ProductPrice {
     int JEDI_PACK = 1100;
     int REBEL_LEADER_PACK = 200;
     int VIRTUAL_ALTERNATE_IMAGE_BOOSTER_PACK = 2000;
+    int DBCCG_ALTERNATE_IMAGE_BOOSTER_PACK = 2000;
 
     // Anthology Boxes
     int FIRST_ANTHOLOGY_BOX = 3000;

@@ -247,6 +247,11 @@ public enum Persona implements Filterable {
     HIBBITY("Hibbity Jibbity"),
     TINY("Tiny"),
     MORYVN("Morvyn"),
+    VELIRA("Valira Morvane"),
+    EENO("Eeno"),
+    ARNID("Arnid Vus"),
+    SIORC("Siorc"),
+    LULA("Lulaire Sol'Vida"),
 
 
     // Starships
@@ -343,6 +348,9 @@ public enum Persona implements Filterable {
     LYNS_BLASTER_RIFLE("Lyn's Blaster Rifle"),
     HIBBITYS_BLASTER_RFILE("Hibbity Jibbity's Blaster Rifle"),
     MORVYNS_LIGHTSABER("Morvyn's Lightsaber"),
+    DACIENS_LIGHTSABER("Dacien Victae's Lightsaber"),
+    EENOS_LIGHTSABER("Eeno's Lightsaber"),
+    ARNIDS_BLASTER_PISTOL("Arnid Vus's Blaster Pistol"),
 
 
     ;

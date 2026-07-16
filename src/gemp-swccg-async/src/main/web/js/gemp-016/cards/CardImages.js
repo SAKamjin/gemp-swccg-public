@@ -3841,7 +3841,7 @@ const fixedImages = {
 "303_5":"https://i.imgur.com/2W9HLdJ.png", //Through Passion, I Gain Strength
 "303_6":"https://i.imgur.com/Gdr98oB.png", //Through Power, I Gain Victory
 "303_7":"https://i.imgur.com/0w3JlrP.png", //Peace Is A Lie, There Is Only Passion
-"303_7_BACK":"https://i.imgur.com/SyvBrS2.png", //The Force Shall Free Me
+"303_7_BACK":"https://i.imgur.com/EC2lVuh.png", //The Force Shall Free Me
 "303_8":"https://i.imgur.com/jOsIlnU.png", //Alethia Archenksova, Headmistress
 "303_9":"https://i.imgur.com/myo5LbE.png", //Hence Forth You Shall Be Known As...
 "303_10":"https://i.imgur.com/691oGmT.png", //Shadow Academy Holocron
@@ -4209,7 +4209,31 @@ const fixedImages = {
 "305_185":"https://i.imgur.com/HCETLp6.png", //Quermian General
 "305_186":"https://i.imgur.com/9JGnF45.png", //Alethia Archenksova
 "305_187":"https://i.imgur.com/iaHTDPy.png", //Vez Hirundo
-
+"305_188":"https://i.imgur.com/Es1geoh.png", //Odan-Urr Trooper
+"305_189":"https://i.imgur.com/duHyaxP.png", //Velira Morvane
+"305_190":"https://i.imgur.com/MnZny6o.png", //Eeno, Jedi Knight
+"305_191":"https://i.imgur.com/ULrOqna.png", //R3-N0 (Nemo)
+"305_192":"https://i.imgur.com/WK7BaUS.png", //Arnid Vus
+"305_193":"https://i.imgur.com/QJEsMEC.png", //R5-S7 (Lazy)
+"305_194":"https://i.imgur.com/2DI425m.png", //Argentum Baet
+"305_195":"https://i.imgur.com/mhGWYoo.png", //Siorc
+"305_196":"https://i.imgur.com/M8sxH7O.png", //Salty Trinitaur
+"305_197":"https://i.imgur.com/wsJJwjY.png", //Bril Teg Erinos
+"305_198":"https://i.imgur.com/gVyFwlZ.png", //Knight of Odan-Urr
+"305_199":"https://i.imgur.com/ldUaiVw.png", //Odan-Urr Padawan
+"305_200":"https://i.imgur.com/r263zya.png", //Commander Maverick
+"305_201":"https://i.imgur.com/zLS9ZJF.png", //GM Dacien Victae With Lightsaber
+"305_202":"https://i.imgur.com/i3HmGik.png", //Lulaire Sol'Vida
+"305_203":"https://i.imgur.com/Q5X0ssD.png", //She's Deaf!
+"305_204":"https://i.imgur.com/BEY3GVT.png", //Turel's Soapbox
+"305_205":"https://i.imgur.com/6VJz68y.png", //Raava Squadron 13
+"305_206":"https://i.imgur.com/HqEHrVZ.png", //Eeno's Lightsaber
+"305_207":"https://i.imgur.com/zdnOwmF.png", //Arnid Vus's E-11Q Blaster Pistol
+"305_208":"https://i.imgur.com/I4B58c4.png", //Eeno's Delta-7b
+"305_209":"https://i.imgur.com/BCRJtYF.png", //Resurgent
+"305_210":"https://i.imgur.com/rjYRfjH.png", //Captain Skoo-Wah Nock
+"305_211":"https://i.imgur.com/s96Xoxb.png", //Colo-Claw Squadron 1
+"305_212":"https://i.imgur.com/ltKm2Sc.png", //Kai Lap'lamiz
 
 
 //playtesting
@@ -4769,13 +4793,20 @@ const fixedImages = {
 "302_25ai":"https://i.imgur.com/3BD62vH.png", //Dacien Victae, Deputy Grand Master
 "302_29ai":"https://i.imgur.com/olRnWpk.png", //Lord Idris Adenn, Voice
 "303_15ai":"https://i.imgur.com/q5AwOxA.png", //Shadow Academy: Dueling Platform
+"303_21ai":"https://i.imgur.com/OWeTVkj.png", //Master Kamjin Lap'lamiz, Justicar
 "303_27ai":"https://i.imgur.com/B1pYIkt.png", //Kai Lap'lamiz With Lightsaber
+"304_8ai":"https://i.imgur.com/pZDSvGR.png", //Komilia Lap'lamiz
+"304_9ai":"https://i.imgur.com/7rJv6FK.png", //Komilia Lap'lamiz, Exile
 "304_13ai":"https://i.imgur.com/KtBWlJ1.png", //Sykes Jade
+"304_25ai":"https://i.imgur.com/PMYFELh.png", //Komilia Lap'lamiz, Emperor's Guard
+"304_27ai":"https://i.imgur.com/KR0se7E.png", //Rohan Lap'lamiz, Stormtrooper
 "304_28ai":"https://i.imgur.com/t91DYBW.png", //Master Kamjin 'Maverick' Lap'lamiz
+"304_30ai":"https://i.imgur.com/gq6jdQL.png", //Kamjin Lap'lamiz, Proconsul
 "304_33ai":"https://i.imgur.com/UJk50gN.png", //Pete From Sales
 "304_34ai":"https://i.imgur.com/1EXFkwn.png", //Kamjin Lap'lamiz, Sith Battlemaster
 "304_71ai":"https://i.imgur.com/wR5fhzv.png", //Where is Jenni III
 "304_122ai":"https://i.imgur.com/Adizq2R.png", //Hostile Takeover
+"304_145ai":"https://i.imgur.com/jMD7PN1.png", //Kai Lap'lamiz, Jedi Knight
 "305_5ai":"https://i.imgur.com/EqQnjbO.png", //Sunrider
 "305_19ai":"https://i.imgur.com/r5oXkaz.png", //Declan Roark With Blaster Rifle
 "305_20ai":"https://i.imgur.com/No4F7Ix.png", //Declan Roark
@@ -4786,6 +4817,7 @@ const fixedImages = {
 "305_104ai":"https://i.imgur.com/gHtvBwO.png", //Selika Roh di Plagia's Lightsaber
 "305_130ai":"https://i.imgur.com/5npjrLl.png", //I Have Neglected Your Training
 "305_130ai_BACK":"https://i.imgur.com/k5LTXnE.png", //Your Training Is Now Complete
+"305_189ai":"https://i.imgur.com/1BmAP6W.png", //Velira Morvane
 
 
 };

@@ -1496,4 +1496,8 @@ public interface Title {
     String You_Are_Your_Fathers_Child = "You Are Your Father's Child";
     String You_Cannot_Beat_Me = "You Cannot Beat Me";
     String Theres_No_Escape = "There's No Escape";
+    String Argentum_Baet = "The Argentum Baet";
+    String Salty_Trinitaur = "Salty Trinitaur";
+    String Colo_Claw_Squadron_1 = "Colo-Claw Squadron 1";
+    String Skoo_Wah_Nock = "Captain Skoo-Wah Nock";
 }

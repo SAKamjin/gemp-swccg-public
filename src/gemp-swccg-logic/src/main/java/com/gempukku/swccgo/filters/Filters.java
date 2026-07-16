@@ -19834,6 +19834,16 @@ public class Filters {
     public static final Filter Morvyn = Filters.persona(Persona.MORYVN);
     public static final Filter You_Are_Your_Fathers_Child = Filters.title(Title.You_Are_Your_Fathers_Child);
     public static final Filter You_Cannot_Beat_Me = Filters.title(Title.You_Cannot_Beat_Me);
+    public static final Filter Argentum_Baet = Filters.title(Title.Argentum_Baet);
+    public static final Filter Eeno = Filters.titleContains("Eeno");
+    public static final Filter Nemo = Filters.titleContains("R3-N0 (Nemo)");
+    public static final Filter Arnid = Filters.titleContains("Arnid");
+    public static final Filter Siorc = Filters.persona(Persona.SIORC);
+    public static final Filter Salty_Trinitaur = Filters.title(Title.Salty_Trinitaur);
+    public static final Filter Lula = Filters.persona(Persona.LULA);
+    public static final Filter COU_capital_starship = Filters.and(Side.LIGHT, CardType.STARSHIP, CardSubtype.CAPITAL, Icon.COU);
+    public static final Filter Skoo_Wah_Nock = Filters.title(Title.Skoo_Wah_Nock);
+    public static final Filter Colo_Claw_Squadron_1 = Filters.title(Title.Colo_Claw_Squadron_1);
 
 
     private static class SpotFilterCardInPlayVisitor implements PhysicalCardVisitor {

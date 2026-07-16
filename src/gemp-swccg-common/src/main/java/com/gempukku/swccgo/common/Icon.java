@@ -132,7 +132,9 @@ public enum Icon implements Filterable {
     SIDIOUS("Sidious"),
     SKYWALKER("Skywalker"),
     TRADE_FEDERATION("Trade Federation"),
-	CSP("Clan Scholae Palatinae"),
+
+    // Brotherhood Factions
+    CSP("Clan Scholae Palatinae"),
 	ARCONA("Clan Arcona"),
     COU("Clan Odan-Urr"),
     TAL("Clan Taldryan"),

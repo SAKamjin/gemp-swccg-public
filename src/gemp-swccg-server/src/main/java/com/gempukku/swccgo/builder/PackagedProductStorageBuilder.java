@@ -71,6 +71,8 @@ public class PackagedProductStorageBuilder {
             packStorage.addPackagedProduct(product.getProductName(), product);
             product = new GreatHuttExpansionBoosterPack(library);
             packStorage.addPackagedProduct(product.getProductName(), product);
+            product = new ABetterTomorrowBoosterPack(library);
+            packStorage.addPackagedProduct(product.getProductName(), product);
 
             // Add Standard Booster Boxes
             product = new PremiereBoosterBox(library);
@@ -137,6 +139,14 @@ public class PackagedProductStorageBuilder {
             product = new VirtualAlternateImageBoosterPack(library, 7);
             packStorage.addPackagedProduct(product.getProductName(), product);
             product = new VirtualAlternateImageBoosterPack(library, 8);
+            packStorage.addPackagedProduct(product.getProductName(), product);
+            product = new DBCCGAlternateImageBoosterPack(library, 1);
+            packStorage.addPackagedProduct(product.getProductName(), product);
+            product = new DBCCGAlternateImageBoosterPack(library, 2);
+            packStorage.addPackagedProduct(product.getProductName(), product);
+            product = new DBCCGAlternateImageBoosterPack(library, 3);
+            packStorage.addPackagedProduct(product.getProductName(), product);
+            product = new DBCCGAlternateImageBoosterPack(library, 4);
             packStorage.addPackagedProduct(product.getProductName(), product);
 
             // Add Enhanced Packs
