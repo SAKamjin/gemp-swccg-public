@@ -248,6 +248,14 @@ public interface Flags extends BaseQuery {
 		return false;
 	}
 
+	default boolean grantedToDeployToShadowAcademyTarget(GameState gameState, PhysicalCard playedCard, PhysicalCard target) {
+		for (Modifier modifier : getModifiersAffectingCard(gameState, ModifierType.MAY_DEPLOY_TO_SHADOW_ACADEMY_TARGET, playedCard))
+			if (modifier.grantedToDeployToShadowAcademyTarget(gameState, query(), target))
+				return true;
+
+		return false;
+	}
+
 	default boolean grantedToDeployToAhchToTarget(GameState gameState, PhysicalCard playedCard, PhysicalCard target) {
 		for (Modifier modifier : getModifiersAffectingCard(gameState, ModifierType.MAY_DEPLOY_TO_AHCHTO_TARGET, playedCard))
 			if (modifier.grantedToDeployToAhchToTarget(gameState, query(), target))

@@ -81,6 +81,7 @@ public class HallServer extends AbstractServer {
     private Map<String, RunningTable> _runningTables = new LinkedHashMap<>();
 
     private Map<Player, HallCommunicationChannel> _playerChannelCommunication = new ConcurrentHashMap<Player, HallCommunicationChannel>();
+    private final Set<HallUpdateListener> _hallUpdateListeners = Collections.newSetFromMap(new ConcurrentHashMap<HallUpdateListener, Boolean>());
     private int _nextChannelNumber = 0;
 
     private Map<String, Tournament> _runningTournaments = new LinkedHashMap<String, Tournament>();
@@ -159,6 +160,8 @@ public class HallServer extends AbstractServer {
     private void hallChanged() {
         for (HallCommunicationChannel hallCommunicationChannel : _playerChannelCommunication.values())
             hallCommunicationChannel.hallChanged();
+        for (HallUpdateListener hallUpdateListener : _hallUpdateListeners)
+            hallUpdateListener.hallChanged();
     }
 
     @Override
@@ -723,15 +726,24 @@ public class HallServer extends AbstractServer {
         }
     }
 
-    public void signupUserForHall(Player player, HallChannelVisitor hallChannelVisitor) {
+    public HallCommunicationChannel signupUserForHall(Player player, HallChannelVisitor hallChannelVisitor) {
         _hallDataAccessLock.readLock().lock();
         try {
             HallCommunicationChannel channel = new HallCommunicationChannel(_nextChannelNumber++);
             channel.processCommunicationChannel(this, player, hallChannelVisitor);
             _playerChannelCommunication.put(player, channel);
+            return channel;
         } finally {
             _hallDataAccessLock.readLock().unlock();
         }
+    }
+
+    public void addHallUpdateListener(HallUpdateListener hallUpdateListener) {
+        _hallUpdateListeners.add(hallUpdateListener);
+    }
+
+    public void removeHallUpdateListener(HallUpdateListener hallUpdateListener) {
+        _hallUpdateListeners.remove(hallUpdateListener);
     }
 
     public HallCommunicationChannel getCommunicationChannel(Player player, int channelNumber)

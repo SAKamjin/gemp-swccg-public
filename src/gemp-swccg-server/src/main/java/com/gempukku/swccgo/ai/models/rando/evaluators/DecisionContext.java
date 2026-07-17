@@ -1,6 +1,7 @@
 package com.gempukku.swccgo.ai.models.rando.evaluators;
 
 import com.gempukku.swccgo.ai.models.rando.strategy.DeployPhasePlanner;
+import com.gempukku.swccgo.ai.models.rando.strategy.DeckOracle;
 import com.gempukku.swccgo.ai.models.rando.strategy.ObjectiveHandler;
 import com.gempukku.swccgo.ai.models.rando.strategy.ShieldStrategy;
 import com.gempukku.swccgo.ai.models.rando.strategy.StrategyController;
@@ -64,6 +65,7 @@ public class DecisionContext {
     private ObjectiveHandler objectiveHandler;
     private ShieldStrategy shieldStrategy;
     private DeployPhasePlanner deployPhasePlanner;
+    private DeckOracle deckOracle;
 
     public DecisionContext(GameState gameState, String playerId, String decisionType,
                           String decisionText, String decisionId, Phase phase) {
@@ -317,5 +319,13 @@ public class DecisionContext {
 
     public void setDeployPhasePlanner(DeployPhasePlanner deployPhasePlanner) {
         this.deployPhasePlanner = deployPhasePlanner;
+    }
+
+    public DeckOracle getDeckOracle() {
+        return deckOracle;
+    }
+
+    public void setDeckOracle(DeckOracle deckOracle) {
+        this.deckOracle = deckOracle;
     }
 }

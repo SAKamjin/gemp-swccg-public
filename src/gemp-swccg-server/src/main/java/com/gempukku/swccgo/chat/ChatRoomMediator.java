@@ -41,6 +41,10 @@ public class ChatRoomMediator {
     }
 
     public List<ChatMessage> joinUser(String playerId, boolean admin, boolean playtester) throws PrivateInformationException {
+        return joinUser(playerId, admin, playtester, new ChatCommunicationChannel());
+    }
+
+    public List<ChatMessage> joinUser(String playerId, boolean admin, boolean playtester, ChatCommunicationChannel channel) throws PrivateInformationException {
         _lock.writeLock().lock();
         try {
             if(_allowedPlayers != null && !_allowedPlayers.contains(playerId) && _privateRoom)
@@ -48,10 +52,11 @@ public class ChatRoomMediator {
             if(_allowedPlayers != null && !_allowedPlayers.contains(playerId) && _playtesting && !admin && !playtester)
                 throw new PrivateInformationException();
 
-            ChatCommunicationChannel value = new ChatCommunicationChannel();
-            _listeners.put(playerId, value);
-            _chatRoom.joinChatRoom(playerId, _allowedPlayers != null && !_allowedPlayers.contains(playerId) && !_allowSpectatorsToChat, value);
-            return value.consumeMessages(0);
+            ChatCommunicationChannel previous = _listeners.put(playerId, channel);
+            if (previous != null && previous != channel)
+                previous.replacedByAnotherConnection();
+            _chatRoom.joinChatRoom(playerId, _allowedPlayers != null && !_allowedPlayers.contains(playerId) && !_allowSpectatorsToChat, channel);
+            return channel.consumeMessages(0);
         } finally {
             _lock.writeLock().unlock();
         }
@@ -74,6 +79,19 @@ public class ChatRoomMediator {
         try {
             _chatRoom.partChatRoom(playerId);
             _listeners.remove(playerId);
+        } finally {
+            _lock.writeLock().unlock();
+        }
+    }
+
+    public void partUser(String playerId, ChatCommunicationChannel channel) {
+        _lock.writeLock().lock();
+        try {
+            ChatCommunicationChannel current = _listeners.get(playerId);
+            if (current == channel) {
+                _chatRoom.partChatRoom(playerId);
+                _listeners.remove(playerId);
+            }
         } finally {
             _lock.writeLock().unlock();
         }
@@ -128,6 +146,7 @@ public class ChatRoomMediator {
                 String playerId = playerListener.getKey();
                 ChatCommunicationChannel listener = playerListener.getValue();
                 if (currentTime > (listener.getLastAccessed() + _channelInactivityTimeoutPeriod)) {
+                    listener.closedByServer();
                     _chatRoom.partChatRoom(playerId);
                     _listeners.remove(playerId);
                 }

@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class Card305_140 extends AbstractDarkJediMasterSith {
     public Card305_140() {
-        super(Side.DARK, 6, 7, 7, 7, 9, "Kamjin Lap'lamiz, Sith Master", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.UR);
+        super(Side.DARK, 6, 5, 7, 7, 9, "Kamjin Lap'lamiz, Sith Master", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.UR);
         setLore("When Kamjin first wanted to train his children it split his family apart.  A decade later, he finally is given the chance to pass on what he's learned to Komilia and Rohan. He fears Kai is forever lost to the light.");
         setGameText("May only deploy to a Shadow Academy location. [Pilot] 3. When the mentor, adds 1 to training destiny, 2 if training a Lap'lamiz. Where present, battles and attacks may not occur unless a Light Side character of ability > 3 is present. Immune to attrition.");
         addIcons(Icon.ABT, Icon.WARRIOR, Icon.PILOT);

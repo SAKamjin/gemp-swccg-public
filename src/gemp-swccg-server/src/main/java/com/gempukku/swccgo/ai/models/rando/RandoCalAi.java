@@ -9,6 +9,7 @@ import com.gempukku.swccgo.ai.common.AiPriorityCards;
 import com.gempukku.swccgo.ai.models.rando.evaluators.CombinedEvaluator;
 import com.gempukku.swccgo.ai.models.rando.evaluators.DecisionContext;
 import com.gempukku.swccgo.ai.models.rando.evaluators.EvaluatedAction;
+import com.gempukku.swccgo.ai.models.rando.strategy.DeckOracle;
 import com.gempukku.swccgo.ai.models.rando.strategy.DeployPhasePlanner;
 import com.gempukku.swccgo.ai.models.rando.strategy.ObjectiveHandler;
 import com.gempukku.swccgo.ai.models.rando.strategy.ShieldStrategy;
@@ -69,6 +70,9 @@ public class RandoCalAi extends HeuristicAiBase {
 
     // Deploy phase planner for holistic deployment plans
     private final DeployPhasePlanner deployPhasePlanner;
+
+    // Full deck knowledge for pull validation
+    private final DeckOracle deckOracle;
 
     // Personality system (will be set via setter after construction)
     private AstrogatorPersonality personality;
@@ -195,6 +199,7 @@ public class RandoCalAi extends HeuristicAiBase {
         this.objectiveHandler = new ObjectiveHandler();
         this.shieldStrategy = new ShieldStrategy();
         this.deployPhasePlanner = new DeployPhasePlanner();
+        this.deckOracle = new DeckOracle();
         this.personality = new AstrogatorPersonality();
         this.holidayOverlay = HolidayOverlay.getInstance();
         LOG.info("RandoCalAi initialized with {} evaluators", combinedEvaluator.getEvaluators().size());
@@ -792,6 +797,7 @@ public class RandoCalAi extends HeuristicAiBase {
         evalContext.setObjectiveHandler(objectiveHandler);
         evalContext.setShieldStrategy(shieldStrategy);
         evalContext.setDeployPhasePlanner(deployPhasePlanner);
+        evalContext.setDeckOracle(deckOracle);
 
         return evalContext;
     }
