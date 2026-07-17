@@ -3839,7 +3839,7 @@ const fixedImages = {
 "303_1":"https://i.imgur.com/Z0iQ6oC.png", //Marick Tyris Arconae, Exarch
 "303_2":"https://i.imgur.com/emuM6k9.png", //Arx: The Shadow Academy (Light)
 "303_3":"https://i.imgur.com/yisEyLl.png", //Arx: The Shadow Academy (Dark)
-"303_4":"https://i.imgur.com/p4tgdw4.png", //Shadow Academy: Training Grounds
+"303_4":"https://i.imgur.com/MmEb2Rv.png", //Shadow Academy: Training Grounds
 "303_5":"https://i.imgur.com/2W9HLdJ.png", //Through Passion, I Gain Strength
 "303_6":"https://i.imgur.com/Gdr98oB.png", //Through Power, I Gain Victory
 "303_7":"https://i.imgur.com/0w3JlrP.png", //Peace Is A Lie, There Is Only Passion
@@ -3849,7 +3849,7 @@ const fixedImages = {
 "303_10":"https://i.imgur.com/691oGmT.png", //Shadow Academy Holocron
 "303_11":"https://i.imgur.com/ONDgwyA.png", //Instructor Aleema
 "303_12":"https://i.imgur.com/fhOF43q.png", //Through Strength, I Gain Power
-"303_13":"https://i.imgur.com/thATtji.png", //Shadow Academy: Training Grounds
+"303_13":"https://i.imgur.com/mwjAvhb.png", //Shadow Academy: Study Room
 "303_14":"https://i.imgur.com/hPMNmG5.png", //Impatient Apprentice
 "303_15":"https://i.imgur.com/8Gpehfy.png", //Shadow Academy: Dueling Platform
 "303_16":"https://i.imgur.com/4XQkLpx.png", //Evil's Domain
@@ -4162,7 +4162,7 @@ const fixedImages = {
 "305_137":"https://i.imgur.com/C6ySLS2.png", //Rohan Lap'lamiz's Lightsaber
 "305_138":"https://i.imgur.com/s2r8LqM.png", //Komilia Lap'lamiz's Lightsaber
 "305_139":"https://i.imgur.com/jFKVnkx.png", //Komilia Lap'lamiz, Sith Acolyte
-"305_140":"https://i.imgur.com/C1lHOAK.png", //Kamjin Lap'lamiz, Sith Master
+"305_140":"https://i.imgur.com/qPmlK5J.png", //Kamjin Lap'lamiz, Sith Master
 "305_141":"https://i.imgur.com/BERCzQX.png", //A Weapon From a More Civilized Time
 "305_142":"https://i.imgur.com/tZ0Kvy4.png", //Danktooine: Guest Quarters (Dark)
 "305_143":"https://i.imgur.com/S1DZlYc.png", //Danktooine: Lower Corridor (Dark)

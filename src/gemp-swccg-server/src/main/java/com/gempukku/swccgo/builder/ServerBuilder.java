@@ -1,5 +1,6 @@
 package com.gempukku.swccgo.builder;
 
+import com.gempukku.swccgo.auth.JwtService;
 import com.gempukku.swccgo.chat.ChatServer;
 import com.gempukku.swccgo.collection.CollectionsManager;
 import com.gempukku.swccgo.collection.TransferDAO;
@@ -28,6 +29,7 @@ public class ServerBuilder {
         LoggedUserHolder loggedUserHolder = new LoggedUserHolder();
         loggedUserHolder.start();
         objectMap.put(LoggedUserHolder.class, loggedUserHolder);
+        objectMap.put(JwtService.class, new JwtService());
     }
     public static void CreateServices(Map<Type, Object> objectMap) {
         objectMap.put(SwccgoFormatLibrary.class,

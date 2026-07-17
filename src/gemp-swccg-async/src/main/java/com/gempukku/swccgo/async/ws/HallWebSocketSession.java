@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class HallWebSocketSession extends AbstractWebSocketSession implements HallUpdateListener, HallChannelVisitor {
     private final HallServer _hallServer;
     private final Player _player;
-    private final HallCommunicationChannel _hallChannel;
+    private HallCommunicationChannel _hallChannel;
     private final AtomicBoolean _closed = new AtomicBoolean(false);
     private final long _tokenExpiresAtMs;
     private ScheduledFuture<?> _expiryTimer;
@@ -30,13 +30,12 @@ public class HallWebSocketSession extends AbstractWebSocketSession implements Ha
         super(ctx);
         _hallServer = hallServer;
         _player = player;
-        _hallChannel = new WebSocketHallCommunicationChannel();
         _tokenExpiresAtMs = tokenExpiresAt > 0 ? tokenExpiresAt * 1000L : 0L;
     }
 
     @Override
     public void onOpen() {
-        _hallServer.signupUserForHall(_player, _hallChannel, this);
+        _hallChannel = _hallServer.signupUserForHall(_player, this);
         _hallServer.addHallUpdateListener(this);
         startPeriodicRefresh();
         startServerTimeTicker();
@@ -65,7 +64,7 @@ public class HallWebSocketSession extends AbstractWebSocketSession implements Ha
     }
 
     private void sendHallUpdate() {
-        if (_closed.get())
+        if (_closed.get() || _hallChannel == null)
             return;
         synchronized (_sendLock) {
             _hallChannel.processCommunicationChannel(_hallServer, _player, this);
@@ -248,14 +247,5 @@ public class HallWebSocketSession extends AbstractWebSocketSession implements Ha
         Map<String, Object> payload = new LinkedHashMap<String, Object>();
         payload.put("id", tableId);
         sendEvent("removeTable", payload);
-    }
-
-    private class WebSocketHallCommunicationChannel extends HallCommunicationChannel {
-        @Override
-        public void replacedByAnotherConnection() {
-            if (!_closed.get()) {
-                closeWithReason(4409, "hall connection replaced");
-            }
-        }
     }
 }

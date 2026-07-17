@@ -19883,7 +19883,6 @@ public class Filters {
     public static final Filter Sabacc_Cheater = Filters.title(Title.Sabacc_Cheater);
     public static final Filter Suppressive_Fire = Filters.titleContains("Suppressive Fire");
     public static final Filter Chaotic_Komilia = Filters.title(Title.Chaotic_Komilia);
-    public static final Filter A_Jedis_Resilience = Filters.titleContains("A Jedi's Resilience");
     public static final Filter mercenary = Filters.keyword(Keyword.MERCENARY);
     public static final Filter Morvyn = Filters.persona(Persona.MORYVN);
     public static final Filter You_Are_Your_Fathers_Child = Filters.title(Title.You_Are_Your_Fathers_Child);

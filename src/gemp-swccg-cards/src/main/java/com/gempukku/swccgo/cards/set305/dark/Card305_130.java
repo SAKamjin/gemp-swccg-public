@@ -98,17 +98,17 @@ public class Card305_130 extends AbstractObjective {
                     action.setActionMsg("Deploy Rohan, Headmaster/Headmistress or Instructor, Through Power I Gain Victory, Through Passion I Gain Strength, Impatient Apprentice, or Shadow Academy Holocron to Shadow Academy from Reserve Deck");
                     // Perform result(s)
                     action.appendEffect(
-                            new DeployCardToSystemFromReserveDeckEffect(action, Filters.or(Filters.Rohan, Filters.SA_Instructor, Filters.Through_Power_I_Gain_Victory, Filters.Through_Passion_I_Gain_Strength, Filters.Shadow_Academy_Holocron, Filters.Impatient_Apprentice), Title.Shadow_Academy_Training_Grounds, -2, Filters.SA_Instructor, DeploymentRestrictionsOption.ignoreLocationDeploymentRestrictions(), true));
+                            new DeployCardToSystemFromReserveDeckEffect(action, Filters.or(Filters.Rohan, Filters.SA_Instructor, Filters.Through_Power_I_Gain_Victory, Filters.Through_Passion_I_Gain_Strength, Filters.Shadow_Academy_Holocron, Filters.Impatient_Apprentice), Title.Arx, -2, Filters.SA_Instructor, DeploymentRestrictionsOption.ignoreLocationDeploymentRestrictions(), true));
                     return Collections.singletonList(action);
                 }
                 else {
 
                     final TopLevelGameTextAction action = new TopLevelGameTextAction(self, gameTextSourceCardId, gameTextActionId);
                     action.setText("Deploy card to Shadow Academy from Reserve Deck");
-                    action.setActionMsg("Deploy Rohan, Headmaster/Headmistress or Instructor, Through Power I Gain Victory, Through Passion I Gain Strength, Impatient Apprentice, or Shadow Academy Holocron to Shadow Academy from Reserve Deck");
+                    action.setActionMsg("Deploy Komilia, Headmaster/Headmistress or Instructor, Through Power I Gain Victory, Through Passion I Gain Strength, Impatient Apprentice, or Shadow Academy Holocron to Shadow Academy from Reserve Deck");
                     // Perform result(s)
                     action.appendEffect(
-                            new DeployCardToSystemFromReserveDeckEffect(action, Filters.or(Filters.Komilia, Filters.SA_Instructor, Filters.Through_Power_I_Gain_Victory, Filters.Through_Passion_I_Gain_Strength, Filters.Shadow_Academy_Holocron, Filters.Impatient_Apprentice), Title.Shadow_Academy_Training_Grounds, -2, Filters.SA_Instructor, DeploymentRestrictionsOption.ignoreLocationDeploymentRestrictions(), true) {
+                            new DeployCardToSystemFromReserveDeckEffect(action, Filters.or(Filters.Komilia, Filters.SA_Instructor, Filters.Through_Power_I_Gain_Victory, Filters.Through_Passion_I_Gain_Strength, Filters.Shadow_Academy_Holocron, Filters.Impatient_Apprentice), Title.Arx, -2, Filters.SA_Instructor, DeploymentRestrictionsOption.ignoreLocationDeploymentRestrictions(), true) {
                                 @Override
                                 protected void cardDeployed(PhysicalCard card) {
                                     if (Filters.Son_Of_Laplamiz.accepts(game, card)) {

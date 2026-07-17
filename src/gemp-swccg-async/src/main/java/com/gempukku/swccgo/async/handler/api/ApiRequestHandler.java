@@ -19,8 +19,11 @@ import java.util.Map;
 import java.util.Set;
 
 public class ApiRequestHandler extends SwccgoServerRequestHandler {
+    protected JwtService _jwtService;
+
     public ApiRequestHandler(Map<Type, Object> context) {
         super(context);
+        _jwtService = extractObject(context, JwtService.class);
     }
 
     protected Player getResourceOwnerFromToken(HttpRequest request) throws HttpProcessingException {
