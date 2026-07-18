@@ -58,7 +58,7 @@ public class Card303_008 extends AbstractImperial {
         List<Modifier> modifiers = new LinkedList<Modifier>();
         modifiers.add(new TotalTrainingDestinyModifier(self, Filters.jediTestTargetingMentor(Filters.sameCardId(self)), 2));
         modifiers.add(new ImmuneToAttritionModifier(self));
-        modifiers.add(new DefinedByGameTextAbilityModifier(self, Filters.and(Filters.sameCardId(self), Filters.mentorTargetedByJediTest(Filters.uncompleted_Jedi_Test)), 7));
+        modifiers.add(new DefinedByGameTextAbilityModifier(self, Filters.and(Filters.sameCardId(self), Filters.mentorTargetedByJediTest(Filters.Jedi_Test)), 7));
         return modifiers;
     }
 }

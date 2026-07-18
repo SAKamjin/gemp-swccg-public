@@ -3,16 +3,7 @@ package com.gempukku.swccgo.cards.set303.dark;
 import com.gempukku.swccgo.cards.AbstractJediTest;
 import com.gempukku.swccgo.cards.GameConditions;
 import com.gempukku.swccgo.cards.conditions.JediTestCompletedCondition;
-import com.gempukku.swccgo.common.DestinyType;
-import com.gempukku.swccgo.common.ExpansionSet;
-import com.gempukku.swccgo.common.Icon;
-import com.gempukku.swccgo.common.Keyword;
-import com.gempukku.swccgo.common.Phase;
-import com.gempukku.swccgo.common.PlayCardOptionId;
-import com.gempukku.swccgo.common.Rarity;
-import com.gempukku.swccgo.common.Side;
-import com.gempukku.swccgo.common.TargetId;
-import com.gempukku.swccgo.common.Title;
+import com.gempukku.swccgo.common.*;
 import com.gempukku.swccgo.filters.Filter;
 import com.gempukku.swccgo.filters.Filters;
 import com.gempukku.swccgo.game.AbstractActionProxy;
@@ -67,6 +58,17 @@ public class Card303_009 extends AbstractJediTest {
     @Override
     protected Filter getGameTextValidApprenticeFilter(String playerId, SwccgGame game, PhysicalCard self, PhysicalCard deployTarget, PhysicalCard mentor, boolean isDeployFromHand) {
         return isDeployFromHand ? Filters.any : Filters.here(deployTarget);
+    }
+
+    @Override
+    protected float getAbilityOfMentorForApprenticeTargeting(String playerId, SwccgGame game, PhysicalCard self, PhysicalCard deployTarget, PhysicalCard mentor) {
+        float ability = super.getAbilityOfMentorForApprenticeTargeting(playerId, game, self, deployTarget, mentor);
+
+        if (Filters.persona(Persona.ALETHIA).accepts(game, mentor)) {
+            return Math.max(ability, 7);
+        }
+
+        return ability;
     }
 
     @Override

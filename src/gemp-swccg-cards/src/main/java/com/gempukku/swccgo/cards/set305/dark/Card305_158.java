@@ -36,19 +36,19 @@ public class Card305_158 extends AbstractNormalEffect {
     public Card305_158() {
         super(Side.DARK, 3, PlayCardZoneOption.ATTACHED, "Rumination", Uniqueness.UNIQUE, ExpansionSet.ABT, Rarity.R);
         setLore("Committing to her father's training has been challenging for young Komilia. She constantly questions whether she's worthy and whether or not this had been a mistake.");
-        setGameText("Deploy on Komilia. Once during each of your control phases, you may use 3 Force to retrieve one card from your Lost Pile. Also, when an apprentice, adds 1 to her training destiny.");
+        setGameText("Deploy on Komilia or apprentice. Once during each of your control phases, you may use 3 Force to retrieve one card from your Lost Pile. Also, when an apprentice, adds 1 to their training destiny.");
         addKeywords(Keyword.DEPLOYS_ON_CHARACTERS);
-        addIcons(Icon.DAGOBAH);
+        addIcons(Icon.ABT);
     }
 
     @Override
     protected Filter getGameTextValidDeployTargetFilter(SwccgGame game, PhysicalCard self, PlayCardOptionId playCardOptionId, boolean asReact) {
-        return Filters.Komilia;
+        return Filters.or(Filters.Komilia, Filters.apprentice);
     }
 
     @Override
     protected Filter getGameTextValidTargetFilterToRemainAttachedToAfterCrossingOver(final SwccgGame game, final PhysicalCard self, PlayCardOptionId playCardOptionId) {
-        return Filters.Komilia;
+        return Filters.or(Filters.Komilia, Filters.apprentice);
     }
 
     @Override

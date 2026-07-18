@@ -4180,7 +4180,7 @@ const fixedImages = {
 "305_155":"https://i.imgur.com/KfBds6T.png", //Jan Korsik
 "305_156":"https://i.imgur.com/jz4aBgA.png", //Vezzi Zelarin
 "305_157":"https://i.imgur.com/gEGX5aF.png", //Bionic Hand
-"305_158":"https://i.imgur.com/3aeg35E.png", //Rumination
+"305_158":"https://i.imgur.com/gJZc0CJ.png", //Rumination
 "305_159":"https://i.imgur.com/gMsXTgO.png", //Unfair Advantage
 "305_160":"https://i.imgur.com/2rcJXAV.png", //Fear Is The Path To The Dark Side
 "305_161":"https://i.imgur.com/UjahNPX.png", //Force Amplification

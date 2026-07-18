@@ -297,13 +297,17 @@ public abstract class AbstractJediTest extends AbstractDeployable {
                 Filters.apprenticeTargetedByJediTest(currentJediTestFilter))),
                 getGameTextValidApprenticeFilter(playerId, game, self, deployTarget, mentor, isDeployFromHand));
         if (targetsMentor()) {
-            float abilityOfMentor = game.getModifiersQuerying().getAbility(game.getGameState(), mentor);
+            float abilityOfMentor = getAbilityOfMentorForApprenticeTargeting(playerId, game, self, deployTarget, mentor);
             filter = Filters.and(filter, Filters.not(Filters.abilityMoreThanOrEqualTo(abilityOfMentor)));
         }
         if (isDeployFromHand) {
             filter = Filters.and(filter, Filters.deployableToLocation(self, Filters.sameCardId(deployTarget), false, false, 0, null, DeploymentRestrictionsOption.ignoreLocationDeploymentRestrictions(), null));
         }
         return filter;
+    }
+
+    protected float getAbilityOfMentorForApprenticeTargeting(String playerId, SwccgGame game, PhysicalCard self, PhysicalCard deployTarget, PhysicalCard mentor) {
+        return game.getModifiersQuerying().getAbility(game.getGameState(), mentor);
     }
 
     /**
