@@ -49,7 +49,7 @@ public class QuermiaLayout extends AbstractSystemLayout {
                         new LocationGroup("Senate Courtyard", Filters.Senate_Courtyard),
                         //  E) Exterior sites
                         new LocationGroup("Exterior sites", Filters.and(Filters.exterior_site, Filters.not(Filters.or(Filters.interior_site,
-                                Filters.Senate_Courtyard)), Filters.partOfSystem(systemName))),
+                                Filters.forest_site, Filters.Senate_Courtyard)), Filters.partOfSystem(systemName))),
                         //  F) Forest sites
                         new LocationGroup("Forest sites", Filters.and(Filters.forest_site, Filters.partOfSystem(systemName)))));
 
