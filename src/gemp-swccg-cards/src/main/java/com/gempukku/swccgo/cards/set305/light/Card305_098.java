@@ -87,7 +87,7 @@ public class Card305_098 extends AbstractObjective {
                         new MayNotDeployUsingDejarikRulesModifier(self, Filters.hasAbilityWhenUsingDejarikRules, playerId), null));
         action.appendEffect(
                 new AddUntilEndOfGameModifierEffect(action,
-                        new SuspendsCardModifier(self, Filters.and(Filters.Your_Destiny, Filters.Complications)), null));
+                        new SuspendsCardModifier(self, Filters.or(Filters.Your_Destiny, Filters.Complications)), null));
         action.appendEffect(
                 new AddUntilEndOfGameModifierEffect(action,
                         new NoForceLossFromCardModifier(self, Filters.Vengeance_Of_The_Dark_Prince, playerId), null));

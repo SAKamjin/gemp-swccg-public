@@ -4118,7 +4118,7 @@ const fixedImages = {
 "305_96":"https://i.imgur.com/OwfZxSB.png", //Quermia: Senate Hallway (Light)
 "305_97":"https://i.imgur.com/Zwz25nI.png", //Quermia: Senate Hallway (Dark)
 "305_98":"https://i.imgur.com/DQaO3An.png", //A Senate Motion
-"305_98_BACK":"https://i.imgur.com/QQ3uIoN.png", //Speaker We Have The Floor
+"305_98_BACK":"https://i.imgur.com/OorrCpC.png", //Speaker We Have The Floor
 "305_99":"https://i.imgur.com/52A2AY3.png", //Lady Morvayne Korr
 "305_100":"https://i.imgur.com/pfsBvNF.png", //Echo of Vauzem: Bridge (Dark)
 "305_101":"https://i.imgur.com/rLFgOkz.jpg", //Quermia: Forest (Dark)

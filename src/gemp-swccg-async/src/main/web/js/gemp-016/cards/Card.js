@@ -285,8 +285,15 @@ class Card {
         else
             return maxDimension;
     }
+
+    static GetFrozenOverlayUrl(blueprintId) {
+        if (blueprintId == "305_181" || blueprintId == "305_181_BACK")
+            return "https://i.imgur.com/FwNz0TW.png";
+
+        return "https://res.starwarsccg.org/cards/carbonite.gif";
+    }
     
-    static CreateCardDiv(image, testingText, text, foil, tokens, noBorder, incomplete) {
+    static CreateCardDiv(image, testingText, text, foil, tokens, noBorder, incomplete, frozenOverlayUrl) {
         var cardDiv = $("<div class='card'><img src='" + image + "' width='100%' height='100%'>" + ((text != null) ? text : "") + "</div>");
 
         if (incomplete) {
@@ -299,7 +306,8 @@ class Card {
             cardDiv.append(foilDiv);
         }
 
-        var frozenDiv = $("<div class='frozenOverlay'><img src='https://res.starwarsccg.org/cards/carbonite.gif' width='100%' height='100%'></div>");
+        frozenOverlayUrl = frozenOverlayUrl || "https://res.starwarsccg.org/cards/carbonite.gif";
+        var frozenDiv = $("<div class='frozenOverlay'><img src='" + frozenOverlayUrl + "' width='100%' height='100%'></div>");
         cardDiv.append(frozenDiv);
 
         var suspendedDiv = $("<div class='suspendedOverlay'><img src='https://res.starwarsccg.org/gemp/gray.jpg' width='100%' height='100%'></div>");

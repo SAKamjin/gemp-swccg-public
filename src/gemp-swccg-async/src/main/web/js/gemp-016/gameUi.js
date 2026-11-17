@@ -2457,7 +2457,7 @@ var GempSwccgGameUI = Class.extend({
     },
 
     createCardDiv: function (card, text) {
-        var cardDiv = Card.CreateCardDiv(card.imageUrl, card.testingText, text, card.isFoil(), false, false, card.incomplete);
+        var cardDiv = Card.CreateCardDiv(card.imageUrl, card.testingText, text, card.isFoil(), false, false, card.incomplete, Card.GetFrozenOverlayUrl(card.bareBlueprint));
 
         cardDiv.data("card", card);
 
